@@ -15,5 +15,6 @@
 #import "UIImageView+SHImageView.h"
 #import "UIImage+SHImage.h"
 #import "UIView+SHFrame.h"
+#import "UIBarButtonItem+SHBarItem.h"
 
 #endif /* SHCode_pch */

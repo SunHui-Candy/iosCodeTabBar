@@ -1,31 +1,31 @@
 //
-//  SHOneViewController.m
+//  SHOneRightItemViewController.m
 //  SHCode
 //
-//  Created by ios on 17/3/27.
+//  Created by ios on 17/3/29.
 //  Copyright © 2017年 ios. All rights reserved.
 //
 
-#import "SHOneViewController.h"
 #import "SHOneRightItemViewController.h"
 
-@interface SHOneViewController ()
+@interface SHOneRightItemViewController ()
 
 @end
 
-@implementation SHOneViewController
+@implementation SHOneRightItemViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view.
 }
+
 
 - (void)setupNavItem
 {
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:kImageName(@"MainTagSubIcon") hightImage:kImageName(@"MainTagSubIconClick") target:self action:@selector(rightBarItemClick)];
     
-
+    
 }
 
 

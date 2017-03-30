@@ -10,4 +10,6 @@
 
 @interface SHBaseViewController : UIViewController
 
+- (void)setupNavItem;
+
 @end

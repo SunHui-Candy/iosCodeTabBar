@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81460F0B1E8B530800897B16 /* UIImageView+SHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F0A1E8B530800897B16 /* UIImageView+SHImageView.m */; };
-		81460F0E1E8B53BD00897B16 /* UIImage+SHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F0D1E8B53BD00897B16 /* UIImage+SHImage.m */; };
 		81460F111E8B5AAE00897B16 /* SHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F101E8B5AAE00897B16 /* SHTabBar.m */; };
-		81460F171E8BA2B700897B16 /* UIView+SHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F161E8BA2B700897B16 /* UIView+SHFrame.m */; };
+		81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F1E1E8BB81900897B16 /* SHOneRightItemViewController.m */; };
+		81460F2A1E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F221E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m */; };
+		81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F241E8BBF3C00897B16 /* UIImage+SHImage.m */; };
+		81460F2C1E8BBF3C00897B16 /* UIImageView+SHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */; };
+		81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */; };
 		81F514BE1E88F1C20031EF16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F514BD1E88F1C20031EF16 /* main.m */; };
 		81F514C71E88F1C20031EF16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F514C51E88F1C20031EF16 /* Main.storyboard */; };
 		81F514C91E88F1C20031EF16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F514C81E88F1C20031EF16 /* Assets.xcassets */; };
@@ -46,15 +48,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		81460F091E8B530800897B16 /* UIImageView+SHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SHImageView.h"; sourceTree = "<group>"; };
-		81460F0A1E8B530800897B16 /* UIImageView+SHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SHImageView.m"; sourceTree = "<group>"; };
-		81460F0C1E8B53BD00897B16 /* UIImage+SHImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SHImage.h"; sourceTree = "<group>"; };
-		81460F0D1E8B53BD00897B16 /* UIImage+SHImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SHImage.m"; sourceTree = "<group>"; };
 		81460F0F1E8B5AAE00897B16 /* SHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTabBar.h; sourceTree = "<group>"; };
 		81460F101E8B5AAE00897B16 /* SHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTabBar.m; sourceTree = "<group>"; };
-		81460F151E8BA2B700897B16 /* UIView+SHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHFrame.h"; sourceTree = "<group>"; };
-		81460F161E8BA2B700897B16 /* UIView+SHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHFrame.m"; sourceTree = "<group>"; };
 		81460F191E8BAC7D00897B16 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		81460F1D1E8BB81900897B16 /* SHOneRightItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOneRightItemViewController.h; sourceTree = "<group>"; };
+		81460F1E1E8BB81900897B16 /* SHOneRightItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOneRightItemViewController.m; sourceTree = "<group>"; };
+		81460F211E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SHBarItem.h"; sourceTree = "<group>"; };
+		81460F221E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SHBarItem.m"; sourceTree = "<group>"; };
+		81460F231E8BBF3C00897B16 /* UIImage+SHImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SHImage.h"; sourceTree = "<group>"; };
+		81460F241E8BBF3C00897B16 /* UIImage+SHImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SHImage.m"; sourceTree = "<group>"; };
+		81460F251E8BBF3C00897B16 /* UIImageView+SHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SHImageView.h"; sourceTree = "<group>"; };
+		81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SHImageView.m"; sourceTree = "<group>"; };
+		81460F271E8BBF3C00897B16 /* UIView+SHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHFrame.h"; sourceTree = "<group>"; };
+		81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHFrame.m"; sourceTree = "<group>"; };
 		81F514B91E88F1C20031EF16 /* SHCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F514BD1E88F1C20031EF16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81F514C61E88F1C20031EF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,29 +119,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		81460F061E8B52C400897B16 /* Other */ = {
+		81460F201E8BBF3C00897B16 /* Catgray */ = {
 			isa = PBXGroup;
 			children = (
-				81460F071E8B52C400897B16 /* Catgray */,
-				81460F081E8B52C400897B16 /* Tools */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		81460F071E8B52C400897B16 /* Catgray */ = {
-			isa = PBXGroup;
-			children = (
-				81460F091E8B530800897B16 /* UIImageView+SHImageView.h */,
-				81460F0A1E8B530800897B16 /* UIImageView+SHImageView.m */,
-				81460F0C1E8B53BD00897B16 /* UIImage+SHImage.h */,
-				81460F0D1E8B53BD00897B16 /* UIImage+SHImage.m */,
-				81460F151E8BA2B700897B16 /* UIView+SHFrame.h */,
-				81460F161E8BA2B700897B16 /* UIView+SHFrame.m */,
+				81460F211E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.h */,
+				81460F221E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m */,
+				81460F231E8BBF3C00897B16 /* UIImage+SHImage.h */,
+				81460F241E8BBF3C00897B16 /* UIImage+SHImage.m */,
+				81460F251E8BBF3C00897B16 /* UIImageView+SHImageView.h */,
+				81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */,
+				81460F271E8BBF3C00897B16 /* UIView+SHFrame.h */,
+				81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */,
 			);
 			path = Catgray;
 			sourceTree = "<group>";
 		};
-		81460F081E8B52C400897B16 /* Tools */ = {
+		81460F291E8BBF3C00897B16 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -211,7 +210,8 @@
 		81F514EF1E88F2940031EF16 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				81460F061E8B52C400897B16 /* Other */,
+				81460F201E8BBF3C00897B16 /* Catgray */,
+				81460F291E8BBF3C00897B16 /* Tools */,
 				81F514F01E88F2940031EF16 /* AppDelegate.h */,
 				81F514F11E88F2940031EF16 /* AppDelegate.m */,
 				81F515241E88FD730031EF16 /* SHCode.pch */,
@@ -301,6 +301,8 @@
 			children = (
 				81F515211E88FC8D0031EF16 /* SHOneViewController.h */,
 				81F515221E88FC8D0031EF16 /* SHOneViewController.m */,
+				81460F1D1E8BB81900897B16 /* SHOneRightItemViewController.h */,
+				81460F1E1E8BB81900897B16 /* SHOneRightItemViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -589,19 +591,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81460F0B1E8B530800897B16 /* UIImageView+SHImageView.m in Sources */,
+				81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */,
 				81F5151D1E88FC6D0031EF16 /* SHThreeViewController.m in Sources */,
+				81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */,
+				81460F2A1E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m in Sources */,
 				81F515171E88FC4D0031EF16 /* SHFiveViewController.m in Sources */,
+				81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */,
 				81F5151A1E88FC5F0031EF16 /* SHFourViewController.m in Sources */,
 				81F514BE1E88F1C20031EF16 /* main.m in Sources */,
 				81F515231E88FC8D0031EF16 /* SHOneViewController.m in Sources */,
 				81460F111E8B5AAE00897B16 /* SHTabBar.m in Sources */,
-				81460F171E8BA2B700897B16 /* UIView+SHFrame.m in Sources */,
+				81460F2C1E8BBF3C00897B16 /* UIImageView+SHImageView.m in Sources */,
 				81F515201E88FC7C0031EF16 /* SHTwoViewController.m in Sources */,
 				81F5150D1E88FA3A0031EF16 /* SHCustomTBarController.m in Sources */,
 				81F515141E88FC330031EF16 /* SHBaseViewController.m in Sources */,
 				81FD44CA1E8A3CBD00783B94 /* SHBaseNavViewController.m in Sources */,
-				81460F0E1E8B53BD00897B16 /* UIImage+SHImage.m in Sources */,
 				81F515061E88F2940031EF16 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -752,7 +756,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2HDPP64PV;
-				GCC_PREFIX_HEADER = "/Users/ios/Documents/iOSTest/代码/oc代码/SHCode/SHCode/Other/SHCode.pch";
+				GCC_PREFIX_HEADER = "/Users/ios/Documents/iOSTest/代码/iOSCodeTabBar/SHCode/SHCode/Other/SHCode.pch";
 				INFOPLIST_FILE = SHCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.SHCode;
@@ -765,7 +769,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2HDPP64PV;
-				GCC_PREFIX_HEADER = "/Users/ios/Documents/iOSTest/代码/oc代码/SHCode/SHCode/Other/SHCode.pch";
+				GCC_PREFIX_HEADER = "/Users/ios/Documents/iOSTest/代码/iOSCodeTabBar/SHCode/SHCode/Other/SHCode.pch";
 				INFOPLIST_FILE = SHCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.SHCode;
