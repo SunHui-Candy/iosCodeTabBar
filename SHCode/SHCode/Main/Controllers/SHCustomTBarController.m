@@ -72,9 +72,24 @@
     
     for (NSInteger i = 0; i < barTitle.count; i++) {
         
-        UIViewController *childVC = [[NSClassFromString(childViewControllers[i]) alloc] init];
+        UIViewController *childVC;
+        if (i == 3) {
+            
+            UIStoryboard *meStor = [UIStoryboard storyboardWithName:NSStringFromClass([SHFiveViewController class]) bundle:nil];
+            
+            childVC  = [meStor instantiateInitialViewController];
+            
+
+
+        }else {
+            
+            childVC = [[NSClassFromString(childViewControllers[i]) alloc] init];
+
+        }
         
         [self setupTitleViewController:childVC title:barTitle[i] imageName:barImageName[i] seleImageName:barSelImageName[i]];
+        
+
     }
     
     
@@ -84,7 +99,7 @@
 
 - (void)setupTitleViewController:(UIViewController *)childVC title:(NSString *)title imageName:(NSString *)imageName seleImageName:(NSString *)seleImageName
 {
-    
+
     SHBaseNavViewController *baseNavVC = [[SHBaseNavViewController alloc] initWithRootViewController:childVC];
     baseNavVC.tabBarItem.title = title;
     baseNavVC.tabBarItem.image = kImageName(imageName);

@@ -6,8 +6,9 @@
 //  Copyright © 2017年 ios. All rights reserved.
 //
 
-#import "SHBaseViewController.h"
 
-@interface SHFiveViewController : SHBaseViewController
+#import <UIKit/UIKit.h>
+
+@interface SHFiveViewController : UITableViewController
 
 @end

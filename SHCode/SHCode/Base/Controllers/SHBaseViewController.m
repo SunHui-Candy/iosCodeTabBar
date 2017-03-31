@@ -19,7 +19,7 @@
     self.view.backgroundColor = kSHRandomColor;
     
     [self setupNavItem];
-    
+
 }
 
 #pragma mark - 设置导航

@@ -25,6 +25,14 @@
 //字体
 #define kFontSize(fontSize) [UIFont systemFontOfSize:fontSize]
 
+//格式化字符串
+#define kFormat(string, args...)       [NSString stringWithFormat:string, args]
+
+
+//屏幕宽高
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+
 
 
 

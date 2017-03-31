@@ -26,7 +26,6 @@
      action=handleNavigationTransition:
      
      <UIScreenEdgePanGestureRecognizer: 0x15be0fb10; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x15bd14da0>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x15be0f980>)>>
-
      */
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
     [self.view addGestureRecognizer:pan];
