@@ -11,3 +11,11 @@
 /* 间距 */
 UIKIT_EXTERN CGFloat const SHMarin;
 
+/* 首页顶部高度 */
+UIKIT_EXTERN CGFloat const SHTopHeightTitle;
+
+/** 导航栏的最大Y值 */
+UIKIT_EXTERN CGFloat const SHNavMaxY;
+
+/** UITabBar的高度 */
+UIKIT_EXTERN CGFloat const SHTabBarH;

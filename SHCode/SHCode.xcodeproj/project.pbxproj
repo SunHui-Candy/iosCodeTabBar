@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8140DA791E9376A00025DDAE /* SHChildOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA781E9376A00025DDAE /* SHChildOneTableViewController.m */; };
+		8140DA7C1E9376B10025DDAE /* SHChildTwoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA7B1E9376B10025DDAE /* SHChildTwoTableViewController.m */; };
+		8140DA7F1E9376C10025DDAE /* SHChildThreeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA7E1E9376C10025DDAE /* SHChildThreeTableViewController.m */; };
+		8140DA821E9376D00025DDAE /* SHChildFourTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA811E9376D00025DDAE /* SHChildFourTableViewController.m */; };
+		8140DA851E9376DC0025DDAE /* SHChildFiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA841E9376DC0025DDAE /* SHChildFiveTableViewController.m */; };
 		81460F111E8B5AAE00897B16 /* SHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F101E8B5AAE00897B16 /* SHTabBar.m */; };
 		81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F1E1E8BB81900897B16 /* SHOneRightItemViewController.m */; };
 		81460F2A1E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F221E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m */; };
@@ -16,6 +21,7 @@
 		81BA2EA51E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BA2EA31E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m */; };
 		81BA2EA61E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81BA2EA41E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib */; };
 		81BA2EA91E8E3C82006ABCEF /* SHFiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BA2EA81E8E3C82006ABCEF /* SHFiveModel.m */; };
+		81BA2EAC1E8E47BD006ABCEF /* SHCustomControlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BA2EAB1E8E47BD006ABCEF /* SHCustomControlTool.m */; };
 		81F514BE1E88F1C20031EF16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F514BD1E88F1C20031EF16 /* main.m */; };
 		81F514C71E88F1C20031EF16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F514C51E88F1C20031EF16 /* Main.storyboard */; };
 		81F514C91E88F1C20031EF16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F514C81E88F1C20031EF16 /* Assets.xcassets */; };
@@ -53,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8140DA771E9376A00025DDAE /* SHChildOneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildOneTableViewController.h; sourceTree = "<group>"; };
+		8140DA781E9376A00025DDAE /* SHChildOneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildOneTableViewController.m; sourceTree = "<group>"; };
+		8140DA7A1E9376B10025DDAE /* SHChildTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildTwoTableViewController.h; sourceTree = "<group>"; };
+		8140DA7B1E9376B10025DDAE /* SHChildTwoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildTwoTableViewController.m; sourceTree = "<group>"; };
+		8140DA7D1E9376C10025DDAE /* SHChildThreeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildThreeTableViewController.h; sourceTree = "<group>"; };
+		8140DA7E1E9376C10025DDAE /* SHChildThreeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildThreeTableViewController.m; sourceTree = "<group>"; };
+		8140DA801E9376D00025DDAE /* SHChildFourTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildFourTableViewController.h; sourceTree = "<group>"; };
+		8140DA811E9376D00025DDAE /* SHChildFourTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildFourTableViewController.m; sourceTree = "<group>"; };
+		8140DA831E9376DC0025DDAE /* SHChildFiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildFiveTableViewController.h; sourceTree = "<group>"; };
+		8140DA841E9376DC0025DDAE /* SHChildFiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildFiveTableViewController.m; sourceTree = "<group>"; };
 		81460F0F1E8B5AAE00897B16 /* SHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTabBar.h; sourceTree = "<group>"; };
 		81460F101E8B5AAE00897B16 /* SHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTabBar.m; sourceTree = "<group>"; };
 		81460F191E8BAC7D00897B16 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
@@ -71,6 +87,8 @@
 		81BA2EA41E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHFiveCollectionViewCell.xib; sourceTree = "<group>"; };
 		81BA2EA71E8E3C82006ABCEF /* SHFiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFiveModel.h; sourceTree = "<group>"; };
 		81BA2EA81E8E3C82006ABCEF /* SHFiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFiveModel.m; sourceTree = "<group>"; };
+		81BA2EAA1E8E47BD006ABCEF /* SHCustomControlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCustomControlTool.h; sourceTree = "<group>"; };
+		81BA2EAB1E8E47BD006ABCEF /* SHCustomControlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCustomControlTool.m; sourceTree = "<group>"; };
 		81F514B91E88F1C20031EF16 /* SHCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F514BD1E88F1C20031EF16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81F514C61E88F1C20031EF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +150,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8140DA761E93765D0025DDAE /* SubControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8140DA771E9376A00025DDAE /* SHChildOneTableViewController.h */,
+				8140DA781E9376A00025DDAE /* SHChildOneTableViewController.m */,
+				8140DA7A1E9376B10025DDAE /* SHChildTwoTableViewController.h */,
+				8140DA7B1E9376B10025DDAE /* SHChildTwoTableViewController.m */,
+				8140DA7D1E9376C10025DDAE /* SHChildThreeTableViewController.h */,
+				8140DA7E1E9376C10025DDAE /* SHChildThreeTableViewController.m */,
+				8140DA801E9376D00025DDAE /* SHChildFourTableViewController.h */,
+				8140DA811E9376D00025DDAE /* SHChildFourTableViewController.m */,
+				8140DA831E9376DC0025DDAE /* SHChildFiveTableViewController.h */,
+				8140DA841E9376DC0025DDAE /* SHChildFiveTableViewController.m */,
+			);
+			path = SubControllers;
+			sourceTree = "<group>";
+		};
 		81460F201E8BBF3C00897B16 /* Catgray */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +187,8 @@
 			children = (
 				81FF0DFA1E8CD9270014DA88 /* SHConstStr.h */,
 				81FF0DFB1E8CD9270014DA88 /* SHConstStr.m */,
+				81BA2EAA1E8E47BD006ABCEF /* SHCustomControlTool.h */,
+				81BA2EAB1E8E47BD006ABCEF /* SHCustomControlTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -322,6 +359,7 @@
 			children = (
 				81F515211E88FC8D0031EF16 /* SHOneViewController.h */,
 				81F515221E88FC8D0031EF16 /* SHOneViewController.m */,
+				8140DA761E93765D0025DDAE /* SubControllers */,
 				81460F1D1E8BB81900897B16 /* SHOneRightItemViewController.h */,
 				81460F1E1E8BB81900897B16 /* SHOneRightItemViewController.m */,
 			);
@@ -615,9 +653,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */,
+				8140DA851E9376DC0025DDAE /* SHChildFiveTableViewController.m in Sources */,
 				81F5151D1E88FC6D0031EF16 /* SHThreeViewController.m in Sources */,
 				81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */,
 				81460F2A1E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m in Sources */,
+				8140DA7F1E9376C10025DDAE /* SHChildThreeTableViewController.m in Sources */,
 				81F515171E88FC4D0031EF16 /* SHFiveViewController.m in Sources */,
 				81BA2EA91E8E3C82006ABCEF /* SHFiveModel.m in Sources */,
 				81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */,
@@ -625,13 +665,17 @@
 				81F514BE1E88F1C20031EF16 /* main.m in Sources */,
 				81F515231E88FC8D0031EF16 /* SHOneViewController.m in Sources */,
 				81460F111E8B5AAE00897B16 /* SHTabBar.m in Sources */,
+				8140DA791E9376A00025DDAE /* SHChildOneTableViewController.m in Sources */,
 				81FF0DFC1E8CD9270014DA88 /* SHConstStr.m in Sources */,
 				81460F2C1E8BBF3C00897B16 /* UIImageView+SHImageView.m in Sources */,
+				81BA2EAC1E8E47BD006ABCEF /* SHCustomControlTool.m in Sources */,
 				81F515201E88FC7C0031EF16 /* SHTwoViewController.m in Sources */,
 				81F5150D1E88FA3A0031EF16 /* SHCustomTBarController.m in Sources */,
+				8140DA821E9376D00025DDAE /* SHChildFourTableViewController.m in Sources */,
 				81F515141E88FC330031EF16 /* SHBaseViewController.m in Sources */,
 				81BA2EA51E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m in Sources */,
 				81FD44CA1E8A3CBD00783B94 /* SHBaseNavViewController.m in Sources */,
+				8140DA7C1E9376B10025DDAE /* SHChildTwoTableViewController.m in Sources */,
 				81F515061E88F2940031EF16 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

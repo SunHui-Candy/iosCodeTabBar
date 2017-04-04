@@ -9,3 +9,14 @@
 
 /* 间距 */
 CGFloat const SHMarin = 10;
+
+/* 首页顶部高度 */
+CGFloat const SHTopHeightTitle = 35;
+
+/** 导航栏的最大Y值 */
+CGFloat const SHNavMaxY = 64;
+
+
+/** UITabBar的高度 */
+CGFloat const SHTabBarH = 49;
+

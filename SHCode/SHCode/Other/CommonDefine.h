@@ -17,7 +17,8 @@
 //黑色
 #define kBlackColor [UIColor blackColor]
 #define kRedColor [UIColor redColor]
-
+#define kWhiteColor [UIColor whiteColor]
+#define kClearColor [UIColor clearColor]
 
 //图片
 #define kImageName(imageName) [UIImage imageNamed:imageName]
