@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34F90D3FEF9CD13FA583690F /* libPods-SHCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290C0B9AAB939F79C245608F /* libPods-SHCode.a */; };
 		8140DA791E9376A00025DDAE /* SHChildOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA781E9376A00025DDAE /* SHChildOneTableViewController.m */; };
 		8140DA7C1E9376B10025DDAE /* SHChildTwoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA7B1E9376B10025DDAE /* SHChildTwoTableViewController.m */; };
 		8140DA7F1E9376C10025DDAE /* SHChildThreeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA7E1E9376C10025DDAE /* SHChildThreeTableViewController.m */; };
 		8140DA821E9376D00025DDAE /* SHChildFourTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA811E9376D00025DDAE /* SHChildFourTableViewController.m */; };
 		8140DA851E9376DC0025DDAE /* SHChildFiveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA841E9376DC0025DDAE /* SHChildFiveTableViewController.m */; };
+		8140DA881E9392BE0025DDAE /* SHOneChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA871E9392BE0025DDAE /* SHOneChildModel.m */; };
+		8140DA8C1E9393240025DDAE /* SHOneChildTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA8A1E9393240025DDAE /* SHOneChildTableViewCell.m */; };
+		8140DA8D1E9393240025DDAE /* SHOneChildTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8140DA8B1E9393240025DDAE /* SHOneChildTableViewCell.xib */; };
 		81460F111E8B5AAE00897B16 /* SHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F101E8B5AAE00897B16 /* SHTabBar.m */; };
 		81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F1E1E8BB81900897B16 /* SHOneRightItemViewController.m */; };
 		81460F2A1E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F221E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m */; };
@@ -59,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		073FCB79D80ABB9A8FE56B90 /* Pods-SHCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHCode/Pods-SHCode.release.xcconfig"; sourceTree = "<group>"; };
+		290C0B9AAB939F79C245608F /* libPods-SHCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8140DA771E9376A00025DDAE /* SHChildOneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildOneTableViewController.h; sourceTree = "<group>"; };
 		8140DA781E9376A00025DDAE /* SHChildOneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildOneTableViewController.m; sourceTree = "<group>"; };
 		8140DA7A1E9376B10025DDAE /* SHChildTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildTwoTableViewController.h; sourceTree = "<group>"; };
@@ -69,6 +75,11 @@
 		8140DA811E9376D00025DDAE /* SHChildFourTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildFourTableViewController.m; sourceTree = "<group>"; };
 		8140DA831E9376DC0025DDAE /* SHChildFiveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildFiveTableViewController.h; sourceTree = "<group>"; };
 		8140DA841E9376DC0025DDAE /* SHChildFiveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildFiveTableViewController.m; sourceTree = "<group>"; };
+		8140DA861E9392BE0025DDAE /* SHOneChildModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOneChildModel.h; sourceTree = "<group>"; };
+		8140DA871E9392BE0025DDAE /* SHOneChildModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOneChildModel.m; sourceTree = "<group>"; };
+		8140DA891E9393240025DDAE /* SHOneChildTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOneChildTableViewCell.h; sourceTree = "<group>"; };
+		8140DA8A1E9393240025DDAE /* SHOneChildTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOneChildTableViewCell.m; sourceTree = "<group>"; };
+		8140DA8B1E9393240025DDAE /* SHOneChildTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHOneChildTableViewCell.xib; sourceTree = "<group>"; };
 		81460F0F1E8B5AAE00897B16 /* SHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTabBar.h; sourceTree = "<group>"; };
 		81460F101E8B5AAE00897B16 /* SHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTabBar.m; sourceTree = "<group>"; };
 		81460F191E8BAC7D00897B16 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
@@ -123,6 +134,7 @@
 		81FF0DF81E8CB8EE0014DA88 /* SHFiveViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SHFiveViewController.storyboard; sourceTree = "<group>"; };
 		81FF0DFA1E8CD9270014DA88 /* SHConstStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConstStr.h; sourceTree = "<group>"; };
 		81FF0DFB1E8CD9270014DA88 /* SHConstStr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHConstStr.m; sourceTree = "<group>"; };
+		C82DCC211868858F32BB8FC7 /* Pods-SHCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHCode/Pods-SHCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F90D3FEF9CD13FA583690F /* libPods-SHCode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +213,8 @@
 				81F514D51E88F1C20031EF16 /* SHCodeTests */,
 				81F514E01E88F1C30031EF16 /* SHCodeUITests */,
 				81F514BA1E88F1C20031EF16 /* Products */,
+				E3317BFE8A8854423FE9E9EF /* Pods */,
+				98C4036A42503AD3710A7234 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -369,6 +384,8 @@
 		81F514FC1E88F2940031EF16 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8140DA861E9392BE0025DDAE /* SHOneChildModel.h */,
+				8140DA871E9392BE0025DDAE /* SHOneChildModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -376,6 +393,9 @@
 		81F514FD1E88F2940031EF16 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8140DA891E9393240025DDAE /* SHOneChildTableViewCell.h */,
+				8140DA8A1E9393240025DDAE /* SHOneChildTableViewCell.m */,
+				8140DA8B1E9393240025DDAE /* SHOneChildTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -516,6 +536,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		98C4036A42503AD3710A7234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290C0B9AAB939F79C245608F /* libPods-SHCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3317BFE8A8854423FE9E9EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C82DCC211868858F32BB8FC7 /* Pods-SHCode.debug.xcconfig */,
+				073FCB79D80ABB9A8FE56B90 /* Pods-SHCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -523,9 +560,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81F514E61E88F1C30031EF16 /* Build configuration list for PBXNativeTarget "SHCode" */;
 			buildPhases = (
+				7A464FAE36B41A7D7DF9FBAB /* [CP] Check Pods Manifest.lock */,
 				81F514B51E88F1C20031EF16 /* Sources */,
 				81F514B61E88F1C20031EF16 /* Frameworks */,
 				81F514B71E88F1C20031EF16 /* Resources */,
+				96B698AC505144D9C7484C8F /* [CP] Embed Pods Frameworks */,
+				300E9AC53F2DE52BDFCAF56B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -627,6 +667,7 @@
 				81BA2EA61E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib in Resources */,
 				81F514C91E88F1C20031EF16 /* Assets.xcassets in Resources */,
 				81FF0DF91E8CB8EE0014DA88 /* SHFiveViewController.storyboard in Resources */,
+				8140DA8D1E9393240025DDAE /* SHOneChildTableViewCell.xib in Resources */,
 				81F514C71E88F1C20031EF16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,12 +688,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		300E9AC53F2DE52BDFCAF56B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHCode/Pods-SHCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A464FAE36B41A7D7DF9FBAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96B698AC505144D9C7484C8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHCode/Pods-SHCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		81F514B51E88F1C20031EF16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */,
+				8140DA8C1E9393240025DDAE /* SHOneChildTableViewCell.m in Sources */,
 				8140DA851E9376DC0025DDAE /* SHChildFiveTableViewController.m in Sources */,
 				81F5151D1E88FC6D0031EF16 /* SHThreeViewController.m in Sources */,
 				81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */,
@@ -674,6 +764,7 @@
 				8140DA821E9376D00025DDAE /* SHChildFourTableViewController.m in Sources */,
 				81F515141E88FC330031EF16 /* SHBaseViewController.m in Sources */,
 				81BA2EA51E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m in Sources */,
+				8140DA881E9392BE0025DDAE /* SHOneChildModel.m in Sources */,
 				81FD44CA1E8A3CBD00783B94 /* SHBaseNavViewController.m in Sources */,
 				8140DA7C1E9376B10025DDAE /* SHChildTwoTableViewController.m in Sources */,
 				81F515061E88F2940031EF16 /* AppDelegate.m in Sources */,
@@ -823,6 +914,7 @@
 		};
 		81F514E71E88F1C30031EF16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82DCC211868858F32BB8FC7 /* Pods-SHCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2HDPP64PV;
@@ -836,6 +928,7 @@
 		};
 		81F514E81E88F1C30031EF16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073FCB79D80ABB9A8FE56B90 /* Pods-SHCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2HDPP64PV;
