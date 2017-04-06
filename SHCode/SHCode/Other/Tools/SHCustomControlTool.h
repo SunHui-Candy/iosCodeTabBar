@@ -12,4 +12,6 @@
 
 + (UIView *)sh_customViewBgColor:(UIColor *)bgColor;
 
++ (UILabel *)sh_customLabelTextFont:(UIFont *)textFont textColor:(UIColor *)textColor;
+
 @end

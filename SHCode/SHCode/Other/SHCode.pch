@@ -19,4 +19,9 @@
 #import "SHConstStr.h"
 #import "SHCustomControlTool.h"
 
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <UIImageView+WebCache.h>
+#import <MJExtension.h>
+
 #endif /* SHCode_pch */

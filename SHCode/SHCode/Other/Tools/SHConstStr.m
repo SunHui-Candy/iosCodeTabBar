@@ -20,3 +20,5 @@ CGFloat const SHNavMaxY = 64;
 /** UITabBar的高度 */
 CGFloat const SHTabBarH = 49;
 
+/** 统一的一个请求路径 */
+NSString  * const SHCommonURL = @"http://api.budejie.com/api/api_open.php";

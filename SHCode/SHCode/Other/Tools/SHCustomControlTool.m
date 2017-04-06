@@ -17,5 +17,13 @@
     return cusView;
 }
 
++ (UILabel *)sh_customLabelTextFont:(UIFont *)textFont textColor:(UIColor *)textColor
+{
+    UILabel *label = [[UILabel alloc] init];
+    label.textColor = textColor;
+    label.font = textFont;
+    
+    return label;
+}
 
 @end

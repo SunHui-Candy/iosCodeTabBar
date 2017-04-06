@@ -19,3 +19,6 @@ UIKIT_EXTERN CGFloat const SHNavMaxY;
 
 /** UITabBar的高度 */
 UIKIT_EXTERN CGFloat const SHTabBarH;
+
+/** 统一的一个请求路径 */
+UIKIT_EXTERN NSString  * const SHCommonURL;

@@ -10,6 +10,6 @@
 
 @interface UIImageView (SHImageView)
 
-
+- (void)sh_setCircleImage:(NSString *)headerUrl;
 
 @end

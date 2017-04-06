@@ -15,4 +15,8 @@
  */
 + (UIImage *)sh_origanalImageName:(NSString *)imageName;
 
+- (UIImage *)sh_circleImage;
+
++ (instancetype)sh_circleImageName:(NSString *)name;
+
 @end
