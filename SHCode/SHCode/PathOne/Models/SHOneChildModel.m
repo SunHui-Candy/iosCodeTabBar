@@ -25,10 +25,12 @@
     if (self.type != SHTopicTypeWord) {
         CGFloat middleW = textMaxSize.width;
         CGFloat middleH = middleW * self.height / self.width;
-        if (middleH > kScreenH) {
+        if (middleH >= kScreenH) {
             middleH = 200;
+            self.bigPicture = YES;
         }
         self.middleFrame = CGRectMake(SHMarin, _cellH, middleW, middleH);
+        _cellH += middleH + SHMarin;
     }
     
     

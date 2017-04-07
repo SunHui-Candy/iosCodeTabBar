@@ -23,6 +23,7 @@
     SHCustomTBarController *tabVC = [[SHCustomTBarController alloc] init];
     self.window.rootViewController = tabVC;
     [self.window makeKeyAndVisible];
+    [[AFNetworkReachabilityManager sharedManager]startMonitoring];
     
     return YES;
 }

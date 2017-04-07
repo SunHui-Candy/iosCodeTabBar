@@ -7,8 +7,41 @@
 //
 
 #import "UIImageView+SHImageView.h"
+#import <AFNetworkReachabilityManager.h>
 
 @implementation UIImageView (SHImageView)
+
+- (void)sh_setOriginImage:(NSString *)originImageURL thumbnailImage:(NSString *)thumbnailImageURL placeholder:(UIImage *)placeholder completed:(SDWebImageCompletionBlock)completedBlock
+{
+    AFNetworkReachabilityManager *mgr = [AFNetworkReachabilityManager sharedManager];
+    UIImage *originImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:originImageURL];
+    if (originImage) {
+        [self sd_setImageWithURL:[NSURL URLWithString:originImageURL] placeholderImage:placeholder completed:completedBlock];
+    }else {
+        if (mgr.isReachableViaWiFi) {
+            [self sd_setImageWithURL:[NSURL URLWithString:originImageURL] placeholderImage:placeholder completed:completedBlock];
+        }else if (mgr.isReachableViaWWAN){
+            BOOL downloadOriginImage3GOr4G = YES;
+            if (downloadOriginImage3GOr4G) {
+                [self sd_setImageWithURL:[NSURL URLWithString:originImageURL] placeholderImage:placeholder completed:completedBlock];
+
+            }else {
+                [self sd_setImageWithURL:[NSURL URLWithString:thumbnailImageURL] placeholderImage:placeholder completed:completedBlock];
+
+            }
+        }else {
+            UIImage *thumbnailImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:thumbnailImageURL];
+            if (thumbnailImage) {
+                [self sd_setImageWithURL:[NSURL URLWithString:thumbnailImageURL] placeholderImage:placeholder completed:completedBlock];
+
+            }else {
+                [self sd_setImageWithURL:nil placeholderImage:placeholder completed:completedBlock];
+            }
+        }
+        
+    }
+}
+
 
 - (void)sh_setCircleImage:(NSString *)headerUrl
 {

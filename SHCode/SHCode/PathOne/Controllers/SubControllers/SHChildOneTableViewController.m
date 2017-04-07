@@ -28,8 +28,7 @@
 
 @property (nonatomic, copy) NSString *maxtime;
 
-
-
+- (SHTopicType)type;
 
 @end
 
@@ -51,22 +50,20 @@
     return self.dataSouceArrM.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     SHOneChildTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SHOneChildTableViewCellID forIndexPath:indexPath];
-    
     cell.childModel = self.dataSouceArrM[indexPath.row];
     return cell;
 }
 
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SHOneChildModel *childModel = self.dataSouceArrM[indexPath.row];
-    
     return childModel.cellH;
 }
+
 #pragma mark - 代理方法
+
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
     CGFloat offsetY = -(self.tableView.contentInset.top + self.headerV.sh_height);
@@ -79,7 +76,40 @@
 {
     [self dealHeader];
     [self dealFooter];
+    
+    [[SDImageCache sharedImageCache] clearMemory];
 }
+
+#pragma mark - Private&Public Methods
+- (void)setupRefresh
+{
+    [self.tableView addSubview:self.headerV];
+    self.headerV.frame = CGRectMake(0, -50, kScreenW, 50);
+    [self.headerV addSubview:self.headerL];
+    self.headerL.text = @"下拉获取最新数据";
+    self.headerL.frame = self.headerV.bounds;
+    self.headerL.backgroundColor = kRedColor;
+    [self headerBeginRefreshing];
+    
+    
+    self.tableView.tableFooterView = self.footerV;
+    self.footerV.frame = CGRectMake(0, 0, kScreenW, 35);
+    [self.footerV addSubview:self.footerL];
+    self.footerL.text = @"上拉加载更多";
+    self.footerL.frame = self.footerV.bounds;
+    self.footerL.backgroundColor = kBlueColor;
+    
+    
+}
+
+
+- (SHTopicType)type
+{
+    return SHTopicTypeAll;
+}
+
+
+#pragma mark - Footer
 
 - (void)dealFooter
 {
@@ -104,37 +134,15 @@
     [self loadMoreData];
 }
 
-- (void)loadMoreData
-{
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
-    parameters[@"c"] = @"data";
-    parameters[@"type"] = @"31";
-    parameters[@"maxtime"] = self.maxtime;
-    
-    [self.manager GET:SHCommonURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        self.maxtime = responseObject[@"info"][@"maxtime"];
-        NSArray *moreTopics = [SHOneChildModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        [self.dataSouceArrM addObjectsFromArray:moreTopics];
-        [self.tableView reloadData];
-        [self footerEndRefreshing];
-        
-        NSDictionary *dic = responseObject;
-        NSLog(@"%@",dic);
-
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self footerEndRefreshing];
-    }];
-    
-    
-}
-
 - (void)footerEndRefreshing
 {
     self.footerRefreshing = NO;
     self.footerL.text = @"上拉可以加载更多";
     self.footerL.backgroundColor = kRedColor;
 }
+
+#pragma mark - Header
+
 - (void)dealHeader
 {
     if (self.isHeaderRefreshing) {
@@ -150,28 +158,6 @@
     }
 }
 
-#pragma mark - loadData
-
-- (void)setupRefresh
-{
-    [self.tableView addSubview:self.headerV];
-    self.headerV.frame = CGRectMake(0, -50, kScreenW, 50);
-    [self.headerV addSubview:self.headerL];
-    self.headerL.text = @"下拉获取最新数据";
-    self.headerL.frame = self.headerV.bounds;
-    self.headerL.backgroundColor = kRedColor;
-    [self headerBeginRefreshing];
-    
-    
-    self.tableView.tableFooterView = self.footerV;
-    self.footerV.frame = CGRectMake(0, 0, kScreenW, 35);
-    [self.footerV addSubview:self.footerL];
-    self.footerL.text = @"上拉加载更多";
-    self.footerL.frame = self.footerV.bounds;
-    self.footerL.backgroundColor = kBlueColor;
-    
-    
-}
 - (void)headerBeginRefreshing
 {
     if (self.isHeaderRefreshing) {
@@ -201,12 +187,14 @@
     }];
 }
 
+#pragma mark - loadData
+
 - (void)loadNewData
 {
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"list";
     parameters[@"c"] = @"data";
-    parameters[@"type"] = @(1);
+    parameters[@"type"] = @(self.type);
     
     [self.manager GET:SHCommonURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -229,6 +217,30 @@
 
 }
 
+- (void)loadMoreData
+{
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"list";
+    parameters[@"c"] = @"data";
+    parameters[@"type"] = @(self.type);
+    parameters[@"maxtime"] = self.maxtime;
+    
+    [self.manager GET:SHCommonURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        self.maxtime = responseObject[@"info"][@"maxtime"];
+        NSArray *moreTopics = [SHOneChildModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [self.dataSouceArrM addObjectsFromArray:moreTopics];
+        [self.tableView reloadData];
+        [self footerEndRefreshing];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [self footerEndRefreshing];
+        
+    }];
+    
+    
+}
+
+
 #pragma mark - Getters
 
 - (UIView *)footerV
@@ -247,6 +259,7 @@
     }
     return _footerL;
 }
+
 - (UIView *)headerV
 {
     if (!_headerV) {
@@ -272,6 +285,7 @@
     }
     return _manager;
 }
+
 - (NSMutableArray *)dataSouceArrM
 {
     if (!_dataSouceArrM) {

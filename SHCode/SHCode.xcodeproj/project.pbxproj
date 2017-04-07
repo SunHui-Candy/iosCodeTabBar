@@ -22,6 +22,12 @@
 		81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F241E8BBF3C00897B16 /* UIImage+SHImage.m */; };
 		81460F2C1E8BBF3C00897B16 /* UIImageView+SHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */; };
 		81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */; };
+		814F02881E95F29A00CAD99D /* SHTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F02871E95F29A00CAD99D /* SHTopicVideoView.m */; };
+		814F028B1E95F2AB00CAD99D /* SHTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F028A1E95F2AB00CAD99D /* SHTopicVoiceView.m */; };
+		814F028E1E95F2BC00CAD99D /* SHTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F028D1E95F2BC00CAD99D /* SHTopicPictureView.m */; };
+		814F02941E95F2F500CAD99D /* SHTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814F02931E95F2F500CAD99D /* SHTopicVoiceView.xib */; };
+		814F02961E96157900CAD99D /* SHTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814F02951E96157900CAD99D /* SHTopicVideoView.xib */; };
+		814F02981E96158700CAD99D /* SHTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814F02971E96158700CAD99D /* SHTopicPictureView.xib */; };
 		81BA2EA51E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BA2EA31E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m */; };
 		81BA2EA61E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81BA2EA41E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib */; };
 		81BA2EA91E8E3C82006ABCEF /* SHFiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BA2EA81E8E3C82006ABCEF /* SHFiveModel.m */; };
@@ -93,6 +99,15 @@
 		81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SHImageView.m"; sourceTree = "<group>"; };
 		81460F271E8BBF3C00897B16 /* UIView+SHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHFrame.h"; sourceTree = "<group>"; };
 		81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHFrame.m"; sourceTree = "<group>"; };
+		814F02861E95F29A00CAD99D /* SHTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTopicVideoView.h; sourceTree = "<group>"; };
+		814F02871E95F29A00CAD99D /* SHTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTopicVideoView.m; sourceTree = "<group>"; };
+		814F02891E95F2AB00CAD99D /* SHTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTopicVoiceView.h; sourceTree = "<group>"; };
+		814F028A1E95F2AB00CAD99D /* SHTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTopicVoiceView.m; sourceTree = "<group>"; };
+		814F028C1E95F2BC00CAD99D /* SHTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTopicPictureView.h; sourceTree = "<group>"; };
+		814F028D1E95F2BC00CAD99D /* SHTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTopicPictureView.m; sourceTree = "<group>"; };
+		814F02931E95F2F500CAD99D /* SHTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTopicVoiceView.xib; sourceTree = "<group>"; };
+		814F02951E96157900CAD99D /* SHTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTopicVideoView.xib; sourceTree = "<group>"; };
+		814F02971E96158700CAD99D /* SHTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHTopicPictureView.xib; sourceTree = "<group>"; };
 		81BA2EA21E8E0AC4006ABCEF /* SHFiveCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFiveCollectionViewCell.h; sourceTree = "<group>"; };
 		81BA2EA31E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFiveCollectionViewCell.m; sourceTree = "<group>"; };
 		81BA2EA41E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHFiveCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -396,6 +411,15 @@
 				8140DA891E9393240025DDAE /* SHOneChildTableViewCell.h */,
 				8140DA8A1E9393240025DDAE /* SHOneChildTableViewCell.m */,
 				8140DA8B1E9393240025DDAE /* SHOneChildTableViewCell.xib */,
+				814F02861E95F29A00CAD99D /* SHTopicVideoView.h */,
+				814F02871E95F29A00CAD99D /* SHTopicVideoView.m */,
+				814F02951E96157900CAD99D /* SHTopicVideoView.xib */,
+				814F02891E95F2AB00CAD99D /* SHTopicVoiceView.h */,
+				814F028A1E95F2AB00CAD99D /* SHTopicVoiceView.m */,
+				814F02931E95F2F500CAD99D /* SHTopicVoiceView.xib */,
+				814F028C1E95F2BC00CAD99D /* SHTopicPictureView.h */,
+				814F028D1E95F2BC00CAD99D /* SHTopicPictureView.m */,
+				814F02971E96158700CAD99D /* SHTopicPictureView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -664,8 +688,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F514CC1E88F1C20031EF16 /* LaunchScreen.storyboard in Resources */,
+				814F02961E96157900CAD99D /* SHTopicVideoView.xib in Resources */,
+				814F02941E95F2F500CAD99D /* SHTopicVoiceView.xib in Resources */,
 				81BA2EA61E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib in Resources */,
 				81F514C91E88F1C20031EF16 /* Assets.xcassets in Resources */,
+				814F02981E96158700CAD99D /* SHTopicPictureView.xib in Resources */,
 				81FF0DF91E8CB8EE0014DA88 /* SHFiveViewController.storyboard in Resources */,
 				8140DA8D1E9393240025DDAE /* SHOneChildTableViewCell.xib in Resources */,
 				81F514C71E88F1C20031EF16 /* Main.storyboard in Resources */,
@@ -716,7 +743,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		96B698AC505144D9C7484C8F /* [CP] Embed Pods Frameworks */ = {
@@ -742,8 +769,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */,
+				814F02881E95F29A00CAD99D /* SHTopicVideoView.m in Sources */,
 				8140DA8C1E9393240025DDAE /* SHOneChildTableViewCell.m in Sources */,
 				8140DA851E9376DC0025DDAE /* SHChildFiveTableViewController.m in Sources */,
+				814F028B1E95F2AB00CAD99D /* SHTopicVoiceView.m in Sources */,
 				81F5151D1E88FC6D0031EF16 /* SHThreeViewController.m in Sources */,
 				81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */,
 				81460F2A1E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m in Sources */,
@@ -753,6 +782,7 @@
 				81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */,
 				81F5151A1E88FC5F0031EF16 /* SHFourViewController.m in Sources */,
 				81F514BE1E88F1C20031EF16 /* main.m in Sources */,
+				814F028E1E95F2BC00CAD99D /* SHTopicPictureView.m in Sources */,
 				81F515231E88FC8D0031EF16 /* SHOneViewController.m in Sources */,
 				81460F111E8B5AAE00897B16 /* SHTabBar.m in Sources */,
 				8140DA791E9376A00025DDAE /* SHChildOneTableViewController.m in Sources */,

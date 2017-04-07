@@ -10,6 +10,11 @@
 
 @implementation UIView (SHFrame)
 
++ (instancetype)sh_viewFromXib
+{
+    return [[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil].firstObject;
+}
+
 - (void)setSh_height:(CGFloat)sh_height
 {
     CGRect rect = self.frame;

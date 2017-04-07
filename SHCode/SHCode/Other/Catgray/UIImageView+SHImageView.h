@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIImageView+WebCache.h>
 
 @interface UIImageView (SHImageView)
 
 - (void)sh_setCircleImage:(NSString *)headerUrl;
+
+- (void)sh_setOriginImage:(NSString *)originImageURL thumbnailImage:(NSString *)thumbnailImageURL placeholder:(UIImage *)placeholder completed:(SDWebImageCompletionBlock)completedBlock;
 
 @end

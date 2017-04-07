@@ -16,4 +16,7 @@
 @property CGFloat sh_y;
 @property CGFloat sh_centerX;
 @property CGFloat sh_centerY;
+
++ (instancetype)sh_viewFromXib;
+
 @end
