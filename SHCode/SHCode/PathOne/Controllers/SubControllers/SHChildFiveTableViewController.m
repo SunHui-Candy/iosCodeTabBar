@@ -14,7 +14,13 @@
 
 @implementation SHChildFiveTableViewController
 
+- (SHTopicType)type
+{
+    return SHTopicTypeWord;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
 @end

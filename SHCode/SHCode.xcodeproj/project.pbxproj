@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34F90D3FEF9CD13FA583690F /* libPods-SHCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290C0B9AAB939F79C245608F /* libPods-SHCode.a */; };
+		813FBD361E97776200D93F3F /* SHSubOneAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FBD351E97776200D93F3F /* SHSubOneAllTableViewController.m */; };
 		8140DA791E9376A00025DDAE /* SHChildOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA781E9376A00025DDAE /* SHChildOneTableViewController.m */; };
 		8140DA7C1E9376B10025DDAE /* SHChildTwoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA7B1E9376B10025DDAE /* SHChildTwoTableViewController.m */; };
 		8140DA7F1E9376C10025DDAE /* SHChildThreeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA7E1E9376C10025DDAE /* SHChildThreeTableViewController.m */; };
@@ -71,6 +72,8 @@
 /* Begin PBXFileReference section */
 		073FCB79D80ABB9A8FE56B90 /* Pods-SHCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHCode/Pods-SHCode.release.xcconfig"; sourceTree = "<group>"; };
 		290C0B9AAB939F79C245608F /* libPods-SHCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FBD341E97776200D93F3F /* SHSubOneAllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSubOneAllTableViewController.h; sourceTree = "<group>"; };
+		813FBD351E97776200D93F3F /* SHSubOneAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSubOneAllTableViewController.m; sourceTree = "<group>"; };
 		8140DA771E9376A00025DDAE /* SHChildOneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildOneTableViewController.h; sourceTree = "<group>"; };
 		8140DA781E9376A00025DDAE /* SHChildOneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHChildOneTableViewController.m; sourceTree = "<group>"; };
 		8140DA7A1E9376B10025DDAE /* SHChildTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHChildTwoTableViewController.h; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				8140DA811E9376D00025DDAE /* SHChildFourTableViewController.m */,
 				8140DA831E9376DC0025DDAE /* SHChildFiveTableViewController.h */,
 				8140DA841E9376DC0025DDAE /* SHChildFiveTableViewController.m */,
+				813FBD341E97776200D93F3F /* SHSubOneAllTableViewController.h */,
+				813FBD351E97776200D93F3F /* SHSubOneAllTableViewController.m */,
 			);
 			path = SubControllers;
 			sourceTree = "<group>";
@@ -791,6 +796,7 @@
 				81BA2EAC1E8E47BD006ABCEF /* SHCustomControlTool.m in Sources */,
 				81F515201E88FC7C0031EF16 /* SHTwoViewController.m in Sources */,
 				81F5150D1E88FA3A0031EF16 /* SHCustomTBarController.m in Sources */,
+				813FBD361E97776200D93F3F /* SHSubOneAllTableViewController.m in Sources */,
 				8140DA821E9376D00025DDAE /* SHChildFourTableViewController.m in Sources */,
 				81F515141E88FC330031EF16 /* SHBaseViewController.m in Sources */,
 				81BA2EA51E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m in Sources */,

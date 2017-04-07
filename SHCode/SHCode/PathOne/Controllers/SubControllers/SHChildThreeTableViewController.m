@@ -14,6 +14,11 @@
 
 @implementation SHChildThreeTableViewController
 
+- (SHTopicType)type
+{
+    return SHTopicTypeVoice;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

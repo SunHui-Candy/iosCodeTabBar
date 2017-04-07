@@ -14,6 +14,11 @@
 
 @implementation SHChildTwoTableViewController
 
+- (SHTopicType)type
+{
+   return SHTopicTypeVideo;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }

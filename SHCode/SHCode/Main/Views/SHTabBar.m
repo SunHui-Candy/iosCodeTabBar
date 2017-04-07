@@ -12,6 +12,10 @@
 
 @property (nonatomic, strong) UIButton *plusBtn;
 
+/** 上一次点击的按钮 */
+
+@property (nonatomic, strong) UIControl *previousClickedTabBarButton;
+
 @end
 
 @implementation SHTabBar
@@ -26,16 +30,24 @@
     CGFloat itemH = self.sh_height;
         
     NSInteger index = 0;
-    
-    for (UIView *tabBarView in self.subviews) {
+
+    for (UIControl *tabBarView in self.subviews) {
         
         if ([tabBarView isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            
+            /*
+            if (index == 0 && self.previousClickedTabBarButton == nil) {
+                self.previousClickedTabBarButton = tabBarView;
+            }
+             */
             
             if (index == 2) {
                 index += 1;
             }
             tabBarView.frame = CGRectMake(index * itemW, 0, itemW, itemH);
             index++;
+            [tabBarView addTarget:self action:@selector(tabBarBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+            
         }
     }
     
@@ -43,8 +55,15 @@
     
 }
 
-
-#pragma mark - Private&Public Methods
+#pragma mark - 监听点击事件
+- (void)tabBarBtnClick:(UIControl *)tabBarBtn
+{
+    if (self.previousClickedTabBarButton == tabBarBtn) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:SHTabBarButtonDidRepeatClickNotification object:nil];
+    }
+    self.previousClickedTabBarButton = tabBarBtn;
+}
+#pragma mark - Getters
 - (UIButton *)plusBtn
 {
     if (!_plusBtn) {

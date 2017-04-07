@@ -52,7 +52,7 @@
     
     UIButton *btn = self.topTitleView.subviews[index];
     
-    [self topTitleBtnClick:btn];
+    [self dealTitleBtnClick:btn];
 
 }
 
@@ -60,10 +60,19 @@
 - (void)topTitleBtnClick:(UIButton *)btn
 {
     
+    if (self.previousClickTitleBtn == btn) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:SHTitleButtonDidRepeatClickNotification object:nil];
+    }
+    
+    [self dealTitleBtnClick:btn];
+}
+
+- (void)dealTitleBtnClick:(UIButton *)btn
+{
     self.previousClickTitleBtn.selected = NO;
     btn.selected = YES;
     self.previousClickTitleBtn = btn;
-
+    
     NSInteger index = btn.tag;
     
     [UIView animateWithDuration:0.25 animations:^{
@@ -76,8 +85,25 @@
     } completion:^(BOOL finished) {
         [self addChildVcViewsIntoScrollV:index];
     }];
-}
+    
+    for (NSUInteger i = 0; i < self.childViewControllers.count; i++) {
+        UIViewController *childVc = self.childViewControllers[i];
+        if (!childVc.isViewLoaded) {
+            continue;
+        }
+        
+        UIScrollView *scrollV = (UIScrollView *)childVc.view;
+        
+        if (![scrollV isKindOfClass:[UIScrollView class]]) {
+            continue;
+        }
+        
+        scrollV.scrollsToTop = (i == index);
+        
+        
+    }
 
+}
 
 #pragma mark - Private&Public Methods
 
@@ -148,7 +174,7 @@
 
 - (void)setupTopBtn
 {
-    NSArray *titleA = @[@"顶部1", @"顶部2", @"顶部3", @"顶部4", @"顶部5"];
+    NSArray *titleA = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
     
     NSInteger titleCount = titleA.count;
     

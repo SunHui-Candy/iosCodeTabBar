@@ -22,3 +22,9 @@ UIKIT_EXTERN CGFloat const SHTabBarH;
 
 /** 统一的一个请求路径 */
 UIKIT_EXTERN NSString  * const SHCommonURL;
+
+/** TabBarButton被重复点击的通知 */
+UIKIT_EXTERN NSString  * const SHTabBarButtonDidRepeatClickNotification;
+
+/** TitleButton被重复点击的通知 */
+UIKIT_EXTERN NSString  * const SHTitleButtonDidRepeatClickNotification;

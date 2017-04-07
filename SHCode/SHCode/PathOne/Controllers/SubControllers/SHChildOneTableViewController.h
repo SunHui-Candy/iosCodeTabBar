@@ -6,8 +6,8 @@
 //  Copyright © 2017年 ios. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SHSubOneAllTableViewController.h"
 
-@interface SHChildOneTableViewController : UITableViewController
+@interface SHChildOneTableViewController : SHSubOneAllTableViewController
 
 @end

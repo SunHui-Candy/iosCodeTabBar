@@ -14,6 +14,11 @@
 
 @implementation SHChildFourTableViewController
 
+- (SHTopicType)type
+{
+    return SHTopicTypePicture;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

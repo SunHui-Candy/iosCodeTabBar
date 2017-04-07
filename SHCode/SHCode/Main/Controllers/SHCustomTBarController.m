@@ -37,11 +37,9 @@
     NSMutableDictionary *selTitleDic = [NSMutableDictionary dictionary];
     selTitleDic[NSForegroundColorAttributeName] = kBlackColor;
     [item setTitleTextAttributes:selTitleDic forState:UIControlStateSelected];
-
-    
-    
     
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -51,13 +49,14 @@
     
 }
 
+#pragma mark - Public & Public Mthods
+
 - (void)sh_setupMiddleItem
 {
     SHTabBar *tabBar = [[SHTabBar alloc] init];
     [self setValue:tabBar forKey:@"tabBar"];
 }
 
-#pragma mark - Public & Public Mthods
 - (void)sh_setupChildViewControllers
 {
     NSArray *barTitle = @[@"懿",@"贰",@"肆",@"伍"];
