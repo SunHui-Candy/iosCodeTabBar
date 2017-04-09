@@ -18,32 +18,37 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xgm-8j-UvG">
                     <rect key="frame" x="0.0" y="0.0" width="287" height="161"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmF-Dy-Z2q">
-                    <rect key="frame" x="245" y="0.0" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N次播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmF-Dy-Z2q">
+                    <rect key="frame" x="222" y="0.0" width="65" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dm-Mh-AJh">
-                    <rect key="frame" x="245" y="140" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dm-Mh-AJh">
+                    <rect key="frame" x="241" y="140" width="46" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMf-Of-uRS">
-                    <rect key="frame" x="113" y="65" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMf-Of-uRS">
+                    <rect key="frame" x="108" y="45" width="71" height="71"/>
+                    <state key="normal" image="video-play">
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Xgm-8j-UvG" secondAttribute="trailing" id="3Nd-JM-ljz"/>
                 <constraint firstItem="Xgm-8j-UvG" firstAttribute="leading" secondItem="Zz0-c6-Vf6" secondAttribute="leading" id="9dg-MR-dBH"/>
+                <constraint firstAttribute="trailing" secondItem="5Dm-Mh-AJh" secondAttribute="trailing" id="EHY-7G-9Vc"/>
                 <constraint firstAttribute="bottom" secondItem="Xgm-8j-UvG" secondAttribute="bottom" id="Eci-ih-74b"/>
+                <constraint firstAttribute="bottom" secondItem="5Dm-Mh-AJh" secondAttribute="bottom" id="Gp0-m6-QKx"/>
+                <constraint firstItem="dMf-Of-uRS" firstAttribute="centerX" secondItem="Zz0-c6-Vf6" secondAttribute="centerX" id="RmE-cZ-Jfa"/>
                 <constraint firstItem="Xgm-8j-UvG" firstAttribute="top" secondItem="Zz0-c6-Vf6" secondAttribute="top" id="foX-Du-fJs"/>
+                <constraint firstItem="dMf-Of-uRS" firstAttribute="centerY" secondItem="Zz0-c6-Vf6" secondAttribute="centerY" id="koE-xP-4Au"/>
+                <constraint firstAttribute="trailing" secondItem="cmF-Dy-Z2q" secondAttribute="trailing" id="o6U-VT-tbg"/>
+                <constraint firstItem="cmF-Dy-Z2q" firstAttribute="top" secondItem="Zz0-c6-Vf6" secondAttribute="top" id="xRW-5I-DOw"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -55,4 +60,7 @@
             <point key="canvasLocation" x="57.5" y="306.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
 </document>

@@ -18,32 +18,35 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Xb-hb-KpO">
                     <rect key="frame" x="0.0" y="0.0" width="287" height="161"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogJ-OY-P9j">
-                    <rect key="frame" x="245" y="0.0" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N次播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogJ-OY-P9j">
+                    <rect key="frame" x="222" y="0.0" width="65" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deb-ea-YIH">
-                    <rect key="frame" x="245" y="140" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deb-ea-YIH">
+                    <rect key="frame" x="241" y="140" width="46" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BK-7T-dtg">
-                    <rect key="frame" x="113" y="65" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BK-7T-dtg">
+                    <rect key="frame" x="112" y="49" width="63" height="63"/>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="2Xb-hb-KpO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9FB-Hn-fos"/>
+                <constraint firstAttribute="trailing" secondItem="deb-ea-YIH" secondAttribute="trailing" id="BqX-pw-QgH"/>
                 <constraint firstAttribute="trailing" secondItem="2Xb-hb-KpO" secondAttribute="trailing" id="FbD-36-tt9"/>
                 <constraint firstAttribute="bottom" secondItem="2Xb-hb-KpO" secondAttribute="bottom" id="HxA-5B-UAS"/>
+                <constraint firstItem="ogJ-OY-P9j" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q0q-0b-aGX"/>
+                <constraint firstAttribute="trailing" secondItem="ogJ-OY-P9j" secondAttribute="trailing" id="XYU-np-5o9"/>
+                <constraint firstItem="2BK-7T-dtg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="d33-Oi-anp"/>
+                <constraint firstItem="2BK-7T-dtg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jGR-Ru-uUH"/>
                 <constraint firstItem="2Xb-hb-KpO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pyE-ul-AZu"/>
+                <constraint firstAttribute="bottom" secondItem="deb-ea-YIH" secondAttribute="bottom" id="xNH-Ky-D5X"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -55,4 +58,8 @@
             <point key="canvasLocation" x="57.5" y="306.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
 </document>

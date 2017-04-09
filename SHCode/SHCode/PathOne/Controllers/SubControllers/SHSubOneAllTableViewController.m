@@ -54,6 +54,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    self.footerV.hidden = (self.dataSouceArrM.count == 0);
     return self.dataSouceArrM.count;
 }
 
@@ -109,8 +110,6 @@
     
     
 }
-
-
 
 #pragma mark - 重复点击事件
 - (void)tabBarButtonDidRepeatClick

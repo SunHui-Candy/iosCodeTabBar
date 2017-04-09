@@ -7,6 +7,7 @@
 //
 
 #import "SHOneRightItemViewController.h"
+#import "SHLoginRegisterViewController.h"
 
 @interface SHOneRightItemViewController ()
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = kWhiteColor;
+}
+
+- (IBAction)loginBtn:(id)sender {
+    
+    SHLoginRegisterViewController *loginRegisterVc = [[SHLoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegisterVc animated:YES completion:nil];
+    
+    
 }
 
 
@@ -24,7 +33,7 @@
 {
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:kImageName(@"MainTagSubIcon") hightImage:kImageName(@"MainTagSubIconClick") target:self action:@selector(rightBarItemClick)];
-    
+    self.navigationItem.title = @"我的关注";
     
 }
 
