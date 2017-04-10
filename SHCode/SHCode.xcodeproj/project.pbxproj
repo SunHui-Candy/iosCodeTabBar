@@ -63,6 +63,7 @@
 		81FDF8F41E9A45F000EE075B /* SHSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FDF8F31E9A45F000EE075B /* SHSettingTableViewController.m */; };
 		81FF0DF91E8CB8EE0014DA88 /* SHFiveViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FF0DF81E8CB8EE0014DA88 /* SHFiveViewController.storyboard */; };
 		81FF0DFC1E8CD9270014DA88 /* SHConstStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF0DFB1E8CD9270014DA88 /* SHConstStr.m */; };
+		81FF2D111E9B245900DE34AE /* SHFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF2D101E9B245900DE34AE /* SHFileTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,8 @@
 		81FF0DF81E8CB8EE0014DA88 /* SHFiveViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SHFiveViewController.storyboard; sourceTree = "<group>"; };
 		81FF0DFA1E8CD9270014DA88 /* SHConstStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHConstStr.h; sourceTree = "<group>"; };
 		81FF0DFB1E8CD9270014DA88 /* SHConstStr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHConstStr.m; sourceTree = "<group>"; };
+		81FF2D0F1E9B245900DE34AE /* SHFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFileTool.h; sourceTree = "<group>"; };
+		81FF2D101E9B245900DE34AE /* SHFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFileTool.m; sourceTree = "<group>"; };
 		C82DCC211868858F32BB8FC7 /* Pods-SHCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHCode/Pods-SHCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +261,8 @@
 				81FF0DFB1E8CD9270014DA88 /* SHConstStr.m */,
 				81BA2EAA1E8E47BD006ABCEF /* SHCustomControlTool.h */,
 				81BA2EAB1E8E47BD006ABCEF /* SHCustomControlTool.m */,
+				81FF2D0F1E9B245900DE34AE /* SHFileTool.h */,
+				81FF2D101E9B245900DE34AE /* SHFileTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -897,6 +902,7 @@
 				81BA2EAC1E8E47BD006ABCEF /* SHCustomControlTool.m in Sources */,
 				81F515201E88FC7C0031EF16 /* SHTwoViewController.m in Sources */,
 				81F5150D1E88FA3A0031EF16 /* SHCustomTBarController.m in Sources */,
+				81FF2D111E9B245900DE34AE /* SHFileTool.m in Sources */,
 				813FBD361E97776200D93F3F /* SHSubOneAllTableViewController.m in Sources */,
 				8140DA821E9376D00025DDAE /* SHChildFourTableViewController.m in Sources */,
 				81F515141E88FC330031EF16 /* SHBaseViewController.m in Sources */,
