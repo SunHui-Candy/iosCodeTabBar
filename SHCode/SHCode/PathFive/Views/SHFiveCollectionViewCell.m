@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *itemL;
 
+@property (weak, nonatomic) IBOutlet UIImageView *itemImageV;
 
 @end
 
@@ -31,7 +32,8 @@
 - (void)setModel:(SHFiveModel *)model
 {
     _model = model;
-    self.itemL.text = model.title;
+    self.itemL.text = model.name;
+    [self.itemImageV sh_setCircleImage:model.icon];
     
 }
 @end

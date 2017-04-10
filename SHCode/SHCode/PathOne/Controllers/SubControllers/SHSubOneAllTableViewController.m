@@ -111,6 +111,11 @@
     
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 #pragma mark - 重复点击事件
 - (void)tabBarButtonDidRepeatClick
 {
@@ -262,6 +267,7 @@
     
     
 }
+
 
 
 #pragma mark - Getters

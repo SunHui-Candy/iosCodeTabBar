@@ -9,6 +9,9 @@
 #import "SHFiveViewController.h"
 #import "SHFiveCollectionViewCell.h"
 #import "SHFiveModel.h"
+#import "SHWebViewController.h"
+#import "SHSettingTableViewController.h"
+
 
 static NSInteger const cols = 4;
 static CGFloat const margin = 1;
@@ -27,11 +30,25 @@ static CGFloat const margin = 1;
     [super viewDidLoad];
     self.tableView.sectionHeaderHeight = 0;
     self.tableView.sectionFooterHeight = SHMarin;
-    self.tableView.tableFooterView = self.collectoinView;
-    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, SHMarin)];
-    [self loadData];
-}
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(SHMarin - 35, 0, 0, 0);
 
+    
+    [self setupFootView];
+    
+    [self loadData];
+    
+    // 设置
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:kImageName(@"mine-setting-icon") hightImage:kImageName(@"mine-setting-icon-click") target:self action:@selector(setting)];
+    
+    self.navigationItem.rightBarButtonItem = settingItem;
+    
+}
+- (void)setting
+{
+    SHSettingTableViewController *settingVC = [[SHSettingTableViewController alloc] init];
+    [self.navigationController pushViewController:settingVC animated:YES];
+}
 #pragma mark - UICollectionViewDelegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -42,37 +59,57 @@ static CGFloat const margin = 1;
 {
     SHFiveCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SHFiveCollectionViewCellID forIndexPath:indexPath];
     cell.model = self.collecsArrM[indexPath.row];
-    //cell.itemL.text = kFormat(@"这个,%ld",indexPath.row);
-    cell.backgroundColor = kSHRandomColor;
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    SHFiveModel *model = self.collecsArrM[indexPath.row];
+    if (![model.url containsString:@"http"]) {
+        return;
+    }
+    
+    SHWebViewController *webVc = [[SHWebViewController alloc] init];
+    webVc.url = [NSURL URLWithString:model.url];
+    [self.navigationController pushViewController:webVc animated:YES];
+    
+}
+#pragma mark - 设置tableView底部视图
+- (void)setupFootView
+{
+    self.tableView.tableFooterView = self.collectoinView;
 }
 
 #pragma mark - Private&Public Methods
 - (void)loadData
 {
-    for (NSInteger index = 0; index < 9; index++) {
-        SHFiveModel *model = [[SHFiveModel alloc] init];
-        model.title = kFormat(@"第%ld", index);
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"square";
+    parameters[@"c"] = @"topic";
+    [mgr GET:SHCommonURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+
+        self.collecsArrM = [SHFiveModel mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
         
-        [self.collecsArrM addObject:model];
+        [self soulvData];
         
+        // 设置collectionView 计算collectionView高度 = rows * itemWH
+        // Rows = (count - 1) / cols + 1  3 cols4
         NSInteger count = self.collecsArrM.count;
-        
         //重新计算collection的高度
-        NSInteger row = (count - 1) / cols + 1;
-        CGFloat collectionH = row * collectinItemWH;
+        NSInteger rows = (count - 1) / cols + 1;
         
-        CGRect collectinF = self.collectoinView.frame;
-        collectinF.size.height = collectionH;
-        self.collectoinView.frame = collectinF;
+        // 设置collectioView高度
+        self.collectoinView.sh_height = rows * collectinItemWH;
         
-    }
-    
-    [self soulvData];
-    
-    self.tableView.tableFooterView = self.collectoinView;
-    
-    [self.tableView reloadData];
+        // 设置tableView滚动范围:自己计算
+        self.tableView.tableFooterView = self.collectoinView;
+        //刷新表格
+        [self.collectoinView reloadData];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
 }
 
 //补空白格
@@ -80,10 +117,11 @@ static CGFloat const margin = 1;
 {
     NSInteger count = self.collecsArrM.count;
 
-    NSInteger addCount = cols - count % cols;
+    NSInteger exter = count % cols;
 
-    if (addCount) {
-        for (NSInteger i = 0 ; i < addCount; i++) {
+    if (exter) {
+        exter = cols - exter;
+        for (NSInteger i = 0 ; i < exter; i++) {
             
             SHFiveModel *model = [[SHFiveModel alloc] init];
             
@@ -105,7 +143,7 @@ static CGFloat const margin = 1;
         _collectoinView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 300) collectionViewLayout:layOut];
         _collectoinView.delegate = self;
         _collectoinView.dataSource = self;
-        _collectoinView.backgroundColor = kSHRandomColor;
+        _collectoinView.backgroundColor = self.tableView.backgroundColor;
         _collectoinView.scrollEnabled = NO;
        
         [_collectoinView registerNib:[UINib nibWithNibName:NSStringFromClass([SHFiveCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:SHFiveCollectionViewCellID];

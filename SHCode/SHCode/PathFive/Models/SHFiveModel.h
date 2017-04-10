@@ -10,5 +10,8 @@
 
 @interface SHFiveModel : NSObject
 
-@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong) NSString *icon;
+
 @end
