@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHWelcomeViewController">
+            <connections>
+                <outlet property="iconImageV" destination="elW-ef-DQs" id="H4z-MQ-ppZ"/>
+                <outlet property="iconViewBottomCons" destination="4YY-Fn-gvY" id="3bM-qu-sRE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="ek4-NG-Oem">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default" translatesAutoresizingMaskIntoConstraints="NO" id="elW-ef-DQs">
+                    <rect key="frame" x="143" y="427" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="Hui-Bc-0lR"/>
+                        <constraint firstAttribute="width" constant="90" id="neV-Sw-sg1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLs-uQ-2up">
+                    <rect key="frame" x="153" y="547" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="elW-ef-DQs" secondAttribute="bottom" constant="150" id="4YY-Fn-gvY"/>
+                <constraint firstItem="vLs-uQ-2up" firstAttribute="centerX" secondItem="elW-ef-DQs" secondAttribute="centerX" id="F5A-Qv-avm"/>
+                <constraint firstItem="ek4-NG-Oem" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MQY-Z6-h6s"/>
+                <constraint firstItem="elW-ef-DQs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NBe-oX-enD"/>
+                <constraint firstAttribute="trailing" secondItem="ek4-NG-Oem" secondAttribute="trailing" id="SFV-jf-S9E"/>
+                <constraint firstItem="vLs-uQ-2up" firstAttribute="top" secondItem="elW-ef-DQs" secondAttribute="bottom" constant="30" id="b0h-4X-qgt"/>
+                <constraint firstItem="ek4-NG-Oem" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fAm-SQ-xCh"/>
+                <constraint firstAttribute="bottom" secondItem="ek4-NG-Oem" secondAttribute="bottom" id="zWs-1H-44f"/>
+            </constraints>
+            <point key="canvasLocation" x="81.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="375" height="667"/>
+        <image name="avatar_default" width="50" height="50"/>
+    </resources>
+</document>

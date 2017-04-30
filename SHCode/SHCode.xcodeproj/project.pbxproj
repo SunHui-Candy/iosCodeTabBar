@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		34F90D3FEF9CD13FA583690F /* libPods-SHCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290C0B9AAB939F79C245608F /* libPods-SHCode.a */; };
+		81041FE41E9DC82600C40BFE /* SHUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 81041FE31E9DC82600C40BFE /* SHUserAccount.m */; };
+		81041FE71E9DD78000C40BFE /* SHUserAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81041FE61E9DD78000C40BFE /* SHUserAccountViewModel.m */; };
+		81041FEF1E9DFE5800C40BFE /* SHWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81041FED1E9DFE5800C40BFE /* SHWelcomeViewController.m */; };
+		81041FF01E9DFE5800C40BFE /* SHWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81041FEE1E9DFE5800C40BFE /* SHWelcomeViewController.xib */; };
+		81041FF31E9E15B300C40BFE /* SHPathStatsTwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81041FF21E9E15B300C40BFE /* SHPathStatsTwoModel.m */; };
+		81041FF61E9E15CD00C40BFE /* SHPathTwoUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81041FF51E9E15CD00C40BFE /* SHPathTwoUserModel.m */; };
+		810E93471EA46F8D00B2B032 /* NSDate+SHDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E93461EA46F8D00B2B032 /* NSDate+SHDate.m */; };
+		810E934A1EA46FB900B2B032 /* SHFindEmoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E93491EA46FB900B2B032 /* SHFindEmoticon.m */; };
+		811502711EA4B608001D44B4 /* SHPicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 811502701EA4B608001D44B4 /* SHPicCollectionView.m */; };
+		811502741EA4B873001D44B4 /* SHPicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 811502731EA4B873001D44B4 /* SHPicCollectionViewCell.m */; };
+		812B49771EA5C15B00D44C2B /* SHPicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812B49761EA5C15B00D44C2B /* SHPicCollectionViewCell.xib */; };
 		813FBD361E97776200D93F3F /* SHSubOneAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FBD351E97776200D93F3F /* SHSubOneAllTableViewController.m */; };
 		813FBD381E9795DE00D93F3F /* SHOneRightItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FBD371E9795DE00D93F3F /* SHOneRightItemViewController.xib */; };
 		8140DA791E9376A00025DDAE /* SHChildOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8140DA781E9376A00025DDAE /* SHChildOneTableViewController.m */; };
@@ -22,10 +33,23 @@
 		81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F241E8BBF3C00897B16 /* UIImage+SHImage.m */; };
 		81460F2C1E8BBF3C00897B16 /* UIImageView+SHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */; };
 		81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */; };
+		816690801E9CBF4B000F700B /* SHOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8166907E1E9CBF4B000F700B /* SHOAuthViewController.m */; };
+		816690811E9CBF4B000F700B /* SHOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8166907F1E9CBF4B000F700B /* SHOAuthViewController.xib */; };
+		8197E75E1E9CCAA0002D7013 /* SHTwoBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8197E75D1E9CCAA0002D7013 /* SHTwoBaseTableViewController.m */; };
+		8197E7611E9CCB28002D7013 /* SHVisitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8197E7601E9CCB28002D7013 /* SHVisitorView.m */; };
+		8197E7631E9CCB41002D7013 /* SHVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8197E7621E9CCB41002D7013 /* SHVisitorView.xib */; };
+		81AC8AB41E9C817F008658B9 /* SHPathTwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC8AB31E9C817F008658B9 /* SHPathTwoModel.m */; };
+		81AC8AB71E9C8489008658B9 /* SHNetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC8AB61E9C8489008658B9 /* SHNetworkTools.m */; };
 		81BA2EA51E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BA2EA31E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m */; };
 		81BA2EA61E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81BA2EA41E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib */; };
 		81BA2EA91E8E3C82006ABCEF /* SHFiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BA2EA81E8E3C82006ABCEF /* SHFiveModel.m */; };
 		81BA2EAC1E8E47BD006ABCEF /* SHCustomControlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BA2EAB1E8E47BD006ABCEF /* SHCustomControlTool.m */; };
+		81E3A65A1E9B60C3001398F7 /* SHTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E3A6591E9B60C3001398F7 /* SHTitleBtn.m */; };
+		81E3A65D1E9B6502001398F7 /* SHPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E3A65C1E9B6502001398F7 /* SHPopoverViewController.m */; };
+		81E3A6601E9B6C28001398F7 /* SHPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E3A65F1E9B6C28001398F7 /* SHPopAnimator.m */; };
+		81E3A6631E9B71D4001398F7 /* SHPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E3A6621E9B71D4001398F7 /* SHPresentationController.m */; };
+		81E92B6D1EA06DCE008F8ABE /* SHPathTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E92B6C1EA06DCE008F8ABE /* SHPathTwoCell.m */; };
+		81E92B731EA0C193008F8ABE /* SHPathTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E92B721EA0C193008F8ABE /* SHPathTwoCell.xib */; };
 		81F47D121E98D52F000A72B6 /* SHLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F47D101E98D52F000A72B6 /* SHLoginRegisterViewController.m */; };
 		81F47D131E98D52F000A72B6 /* SHLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F47D111E98D52F000A72B6 /* SHLoginRegisterViewController.xib */; };
 		81F47D221E98D53D000A72B6 /* SHOneChildTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F47D171E98D53D000A72B6 /* SHOneChildTableViewCell.m */; };
@@ -86,6 +110,26 @@
 /* Begin PBXFileReference section */
 		073FCB79D80ABB9A8FE56B90 /* Pods-SHCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHCode/Pods-SHCode.release.xcconfig"; sourceTree = "<group>"; };
 		290C0B9AAB939F79C245608F /* libPods-SHCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81041FE21E9DC82600C40BFE /* SHUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHUserAccount.h; sourceTree = "<group>"; };
+		81041FE31E9DC82600C40BFE /* SHUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHUserAccount.m; sourceTree = "<group>"; };
+		81041FE51E9DD78000C40BFE /* SHUserAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHUserAccountViewModel.h; sourceTree = "<group>"; };
+		81041FE61E9DD78000C40BFE /* SHUserAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHUserAccountViewModel.m; sourceTree = "<group>"; };
+		81041FEC1E9DFE5800C40BFE /* SHWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHWelcomeViewController.h; sourceTree = "<group>"; };
+		81041FED1E9DFE5800C40BFE /* SHWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHWelcomeViewController.m; sourceTree = "<group>"; };
+		81041FEE1E9DFE5800C40BFE /* SHWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHWelcomeViewController.xib; sourceTree = "<group>"; };
+		81041FF11E9E15B300C40BFE /* SHPathStatsTwoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPathStatsTwoModel.h; sourceTree = "<group>"; };
+		81041FF21E9E15B300C40BFE /* SHPathStatsTwoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPathStatsTwoModel.m; sourceTree = "<group>"; };
+		81041FF41E9E15CD00C40BFE /* SHPathTwoUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPathTwoUserModel.h; sourceTree = "<group>"; };
+		81041FF51E9E15CD00C40BFE /* SHPathTwoUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPathTwoUserModel.m; sourceTree = "<group>"; };
+		810E93451EA46F8D00B2B032 /* NSDate+SHDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SHDate.h"; sourceTree = "<group>"; };
+		810E93461EA46F8D00B2B032 /* NSDate+SHDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SHDate.m"; sourceTree = "<group>"; };
+		810E93481EA46FB900B2B032 /* SHFindEmoticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFindEmoticon.h; sourceTree = "<group>"; };
+		810E93491EA46FB900B2B032 /* SHFindEmoticon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFindEmoticon.m; sourceTree = "<group>"; };
+		8115026F1EA4B608001D44B4 /* SHPicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPicCollectionView.h; sourceTree = "<group>"; };
+		811502701EA4B608001D44B4 /* SHPicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPicCollectionView.m; sourceTree = "<group>"; };
+		811502721EA4B873001D44B4 /* SHPicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPicCollectionViewCell.h; sourceTree = "<group>"; };
+		811502731EA4B873001D44B4 /* SHPicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPicCollectionViewCell.m; sourceTree = "<group>"; };
+		812B49761EA5C15B00D44C2B /* SHPicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHPicCollectionViewCell.xib; sourceTree = "<group>"; };
 		813FBD341E97776200D93F3F /* SHSubOneAllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSubOneAllTableViewController.h; sourceTree = "<group>"; };
 		813FBD351E97776200D93F3F /* SHSubOneAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSubOneAllTableViewController.m; sourceTree = "<group>"; };
 		813FBD371E9795DE00D93F3F /* SHOneRightItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHOneRightItemViewController.xib; sourceTree = "<group>"; };
@@ -114,6 +158,18 @@
 		81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SHImageView.m"; sourceTree = "<group>"; };
 		81460F271E8BBF3C00897B16 /* UIView+SHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHFrame.h"; sourceTree = "<group>"; };
 		81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHFrame.m"; sourceTree = "<group>"; };
+		8166907D1E9CBF4B000F700B /* SHOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOAuthViewController.h; sourceTree = "<group>"; };
+		8166907E1E9CBF4B000F700B /* SHOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOAuthViewController.m; sourceTree = "<group>"; };
+		8166907F1E9CBF4B000F700B /* SHOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHOAuthViewController.xib; sourceTree = "<group>"; };
+		8197E75C1E9CCAA0002D7013 /* SHTwoBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTwoBaseTableViewController.h; sourceTree = "<group>"; };
+		8197E75D1E9CCAA0002D7013 /* SHTwoBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTwoBaseTableViewController.m; sourceTree = "<group>"; };
+		8197E75F1E9CCB28002D7013 /* SHVisitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHVisitorView.h; sourceTree = "<group>"; };
+		8197E7601E9CCB28002D7013 /* SHVisitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHVisitorView.m; sourceTree = "<group>"; };
+		8197E7621E9CCB41002D7013 /* SHVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHVisitorView.xib; sourceTree = "<group>"; };
+		81AC8AB21E9C817F008658B9 /* SHPathTwoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPathTwoModel.h; sourceTree = "<group>"; };
+		81AC8AB31E9C817F008658B9 /* SHPathTwoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPathTwoModel.m; sourceTree = "<group>"; };
+		81AC8AB51E9C8489008658B9 /* SHNetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNetworkTools.h; sourceTree = "<group>"; };
+		81AC8AB61E9C8489008658B9 /* SHNetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNetworkTools.m; sourceTree = "<group>"; };
 		81BA2EA21E8E0AC4006ABCEF /* SHFiveCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFiveCollectionViewCell.h; sourceTree = "<group>"; };
 		81BA2EA31E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFiveCollectionViewCell.m; sourceTree = "<group>"; };
 		81BA2EA41E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHFiveCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -121,6 +177,17 @@
 		81BA2EA81E8E3C82006ABCEF /* SHFiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFiveModel.m; sourceTree = "<group>"; };
 		81BA2EAA1E8E47BD006ABCEF /* SHCustomControlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCustomControlTool.h; sourceTree = "<group>"; };
 		81BA2EAB1E8E47BD006ABCEF /* SHCustomControlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCustomControlTool.m; sourceTree = "<group>"; };
+		81E3A6581E9B60C3001398F7 /* SHTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTitleBtn.h; sourceTree = "<group>"; };
+		81E3A6591E9B60C3001398F7 /* SHTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTitleBtn.m; sourceTree = "<group>"; };
+		81E3A65B1E9B6502001398F7 /* SHPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPopoverViewController.h; sourceTree = "<group>"; };
+		81E3A65C1E9B6502001398F7 /* SHPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPopoverViewController.m; sourceTree = "<group>"; };
+		81E3A65E1E9B6C28001398F7 /* SHPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPopAnimator.h; sourceTree = "<group>"; };
+		81E3A65F1E9B6C28001398F7 /* SHPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPopAnimator.m; sourceTree = "<group>"; };
+		81E3A6611E9B71D4001398F7 /* SHPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPresentationController.h; sourceTree = "<group>"; };
+		81E3A6621E9B71D4001398F7 /* SHPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPresentationController.m; sourceTree = "<group>"; };
+		81E92B6B1EA06DCE008F8ABE /* SHPathTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPathTwoCell.h; sourceTree = "<group>"; };
+		81E92B6C1EA06DCE008F8ABE /* SHPathTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPathTwoCell.m; sourceTree = "<group>"; };
+		81E92B721EA0C193008F8ABE /* SHPathTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHPathTwoCell.xib; sourceTree = "<group>"; };
 		81F47D0F1E98D52F000A72B6 /* SHLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLoginRegisterViewController.h; sourceTree = "<group>"; };
 		81F47D101E98D52F000A72B6 /* SHLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLoginRegisterViewController.m; sourceTree = "<group>"; };
 		81F47D111E98D52F000A72B6 /* SHLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHLoginRegisterViewController.xib; sourceTree = "<group>"; };
@@ -218,6 +285,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81041FE81E9DFD0900C40BFE /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				81041FE91E9DFD0900C40BFE /* Controllers */,
+				81041FEA1E9DFD0900C40BFE /* Models */,
+				81041FEB1E9DFD0900C40BFE /* Views */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		81041FE91E9DFD0900C40BFE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				81041FEC1E9DFE5800C40BFE /* SHWelcomeViewController.h */,
+				81041FED1E9DFE5800C40BFE /* SHWelcomeViewController.m */,
+				81041FEE1E9DFE5800C40BFE /* SHWelcomeViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		81041FEA1E9DFD0900C40BFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81041FEB1E9DFD0900C40BFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8140DA761E93765D0025DDAE /* SubControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +351,8 @@
 				81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */,
 				81F47D321E990244000A72B6 /* UITextField+SHPlaceholder.h */,
 				81F47D331E990244000A72B6 /* UITextField+SHPlaceholder.m */,
+				810E93451EA46F8D00B2B032 /* NSDate+SHDate.h */,
+				810E93461EA46F8D00B2B032 /* NSDate+SHDate.m */,
 			);
 			path = Catgray;
 			sourceTree = "<group>";
@@ -263,8 +366,54 @@
 				81BA2EAB1E8E47BD006ABCEF /* SHCustomControlTool.m */,
 				81FF2D0F1E9B245900DE34AE /* SHFileTool.h */,
 				81FF2D101E9B245900DE34AE /* SHFileTool.m */,
+				81E3A6581E9B60C3001398F7 /* SHTitleBtn.h */,
+				81E3A6591E9B60C3001398F7 /* SHTitleBtn.m */,
+				81E3A65E1E9B6C28001398F7 /* SHPopAnimator.h */,
+				81E3A65F1E9B6C28001398F7 /* SHPopAnimator.m */,
+				81AC8AB51E9C8489008658B9 /* SHNetworkTools.h */,
+				81AC8AB61E9C8489008658B9 /* SHNetworkTools.m */,
+				810E93481EA46FB900B2B032 /* SHFindEmoticon.h */,
+				810E93491EA46FB900B2B032 /* SHFindEmoticon.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		81AC8AB81E9CBA53008658B9 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				81AC8AB91E9CBA53008658B9 /* Controllers */,
+				81AC8ABA1E9CBA53008658B9 /* Models */,
+				81AC8ABB1E9CBA53008658B9 /* Views */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		81AC8AB91E9CBA53008658B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8166907D1E9CBF4B000F700B /* SHOAuthViewController.h */,
+				8166907E1E9CBF4B000F700B /* SHOAuthViewController.m */,
+				8166907F1E9CBF4B000F700B /* SHOAuthViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		81AC8ABA1E9CBA53008658B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81AC8ABB1E9CBA53008658B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81041FE21E9DC82600C40BFE /* SHUserAccount.h */,
+				81041FE31E9DC82600C40BFE /* SHUserAccount.m */,
+				81041FE51E9DD78000C40BFE /* SHUserAccountViewModel.h */,
+				81041FE61E9DD78000C40BFE /* SHUserAccountViewModel.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		81F47D0E1E98D52F000A72B6 /* LoginControllers */ = {
@@ -338,6 +487,8 @@
 		81F514BB1E88F1C20031EF16 /* SHCode */ = {
 			isa = PBXGroup;
 			children = (
+				81041FE81E9DFD0900C40BFE /* Welcome */,
+				81AC8AB81E9CBA53008658B9 /* OAuth */,
 				81F515071E88F2AE0031EF16 /* Main */,
 				81F514FA1E88F2940031EF16 /* PathOne */,
 				81F514F21E88F2940031EF16 /* PathFive */,
@@ -558,6 +709,12 @@
 			children = (
 				81F5151E1E88FC7C0031EF16 /* SHTwoViewController.h */,
 				81F5151F1E88FC7C0031EF16 /* SHTwoViewController.m */,
+				81E3A65B1E9B6502001398F7 /* SHPopoverViewController.h */,
+				81E3A65C1E9B6502001398F7 /* SHPopoverViewController.m */,
+				81E3A6611E9B71D4001398F7 /* SHPresentationController.h */,
+				81E3A6621E9B71D4001398F7 /* SHPresentationController.m */,
+				8197E75C1E9CCAA0002D7013 /* SHTwoBaseTableViewController.h */,
+				8197E75D1E9CCAA0002D7013 /* SHTwoBaseTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -565,6 +722,12 @@
 		81F515041E88F2940031EF16 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				81AC8AB21E9C817F008658B9 /* SHPathTwoModel.h */,
+				81AC8AB31E9C817F008658B9 /* SHPathTwoModel.m */,
+				81041FF11E9E15B300C40BFE /* SHPathStatsTwoModel.h */,
+				81041FF21E9E15B300C40BFE /* SHPathStatsTwoModel.m */,
+				81041FF41E9E15CD00C40BFE /* SHPathTwoUserModel.h */,
+				81041FF51E9E15CD00C40BFE /* SHPathTwoUserModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -572,6 +735,17 @@
 		81F515051E88F2940031EF16 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8197E75F1E9CCB28002D7013 /* SHVisitorView.h */,
+				8197E7601E9CCB28002D7013 /* SHVisitorView.m */,
+				8197E7621E9CCB41002D7013 /* SHVisitorView.xib */,
+				81E92B6B1EA06DCE008F8ABE /* SHPathTwoCell.h */,
+				81E92B6C1EA06DCE008F8ABE /* SHPathTwoCell.m */,
+				81E92B721EA0C193008F8ABE /* SHPathTwoCell.xib */,
+				8115026F1EA4B608001D44B4 /* SHPicCollectionView.h */,
+				811502701EA4B608001D44B4 /* SHPicCollectionView.m */,
+				811502721EA4B873001D44B4 /* SHPicCollectionViewCell.h */,
+				811502731EA4B873001D44B4 /* SHPicCollectionViewCell.m */,
+				812B49761EA5C15B00D44C2B /* SHPicCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -792,14 +966,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E92B731EA0C193008F8ABE /* SHPathTwoCell.xib in Resources */,
 				81F47D2E1E98D665000A72B6 /* SHLoginRegisterView.xib in Resources */,
 				81F47D231E98D53D000A72B6 /* SHOneChildTableViewCell.xib in Resources */,
 				81F514CC1E88F1C20031EF16 /* LaunchScreen.storyboard in Resources */,
 				81BA2EA61E8E0AC5006ABCEF /* SHFiveCollectionViewCell.xib in Resources */,
+				816690811E9CBF4B000F700B /* SHOAuthViewController.xib in Resources */,
 				813FBD381E9795DE00D93F3F /* SHOneRightItemViewController.xib in Resources */,
+				81041FF01E9DFE5800C40BFE /* SHWelcomeViewController.xib in Resources */,
 				81F514C91E88F1C20031EF16 /* Assets.xcassets in Resources */,
 				81F47D251E98D53D000A72B6 /* SHTopicPictureView.xib in Resources */,
+				8197E7631E9CCB41002D7013 /* SHVisitorView.xib in Resources */,
 				81F47D291E98D53D000A72B6 /* SHTopicVoiceView.xib in Resources */,
+				812B49771EA5C15B00D44C2B /* SHPicCollectionViewCell.xib in Resources */,
 				81FF0DF91E8CB8EE0014DA88 /* SHFiveViewController.storyboard in Resources */,
 				81F47D391E991316000A72B6 /* SHFastLoginView.xib in Resources */,
 				81F47D131E98D52F000A72B6 /* SHLoginRegisterViewController.xib in Resources */,
@@ -880,41 +1059,60 @@
 			files = (
 				81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */,
 				8140DA851E9376DC0025DDAE /* SHChildFiveTableViewController.m in Sources */,
+				81E92B6D1EA06DCE008F8ABE /* SHPathTwoCell.m in Sources */,
+				8197E7611E9CCB28002D7013 /* SHVisitorView.m in Sources */,
 				81F5151D1E88FC6D0031EF16 /* SHThreeViewController.m in Sources */,
 				81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */,
 				81460F2A1E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m in Sources */,
+				81041FE71E9DD78000C40BFE /* SHUserAccountViewModel.m in Sources */,
+				810E934A1EA46FB900B2B032 /* SHFindEmoticon.m in Sources */,
 				81F47D371E991308000A72B6 /* SHFastLoginView.m in Sources */,
 				81FDF8EF1E9A2DB000EE075B /* SHWebViewController.m in Sources */,
 				8140DA7F1E9376C10025DDAE /* SHChildThreeTableViewController.m in Sources */,
 				81F515171E88FC4D0031EF16 /* SHFiveViewController.m in Sources */,
 				81BA2EA91E8E3C82006ABCEF /* SHFiveModel.m in Sources */,
 				81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */,
+				81E3A6601E9B6C28001398F7 /* SHPopAnimator.m in Sources */,
 				81F5151A1E88FC5F0031EF16 /* SHFourViewController.m in Sources */,
 				81FDF8F41E9A45F000EE075B /* SHSettingTableViewController.m in Sources */,
 				81F514BE1E88F1C20031EF16 /* main.m in Sources */,
 				81F47D261E98D53D000A72B6 /* SHTopicVideoView.m in Sources */,
+				8197E75E1E9CCAA0002D7013 /* SHTwoBaseTableViewController.m in Sources */,
+				81041FF61E9E15CD00C40BFE /* SHPathTwoUserModel.m in Sources */,
 				81F515231E88FC8D0031EF16 /* SHOneViewController.m in Sources */,
 				81460F111E8B5AAE00897B16 /* SHTabBar.m in Sources */,
+				81E3A65D1E9B6502001398F7 /* SHPopoverViewController.m in Sources */,
+				81041FEF1E9DFE5800C40BFE /* SHWelcomeViewController.m in Sources */,
 				8140DA791E9376A00025DDAE /* SHChildOneTableViewController.m in Sources */,
 				81F47D241E98D53D000A72B6 /* SHTopicPictureView.m in Sources */,
 				81FF0DFC1E8CD9270014DA88 /* SHConstStr.m in Sources */,
+				816690801E9CBF4B000F700B /* SHOAuthViewController.m in Sources */,
+				811502741EA4B873001D44B4 /* SHPicCollectionViewCell.m in Sources */,
 				81460F2C1E8BBF3C00897B16 /* UIImageView+SHImageView.m in Sources */,
+				81AC8AB71E9C8489008658B9 /* SHNetworkTools.m in Sources */,
 				81BA2EAC1E8E47BD006ABCEF /* SHCustomControlTool.m in Sources */,
 				81F515201E88FC7C0031EF16 /* SHTwoViewController.m in Sources */,
 				81F5150D1E88FA3A0031EF16 /* SHCustomTBarController.m in Sources */,
+				81041FF31E9E15B300C40BFE /* SHPathStatsTwoModel.m in Sources */,
 				81FF2D111E9B245900DE34AE /* SHFileTool.m in Sources */,
 				813FBD361E97776200D93F3F /* SHSubOneAllTableViewController.m in Sources */,
+				81E3A6631E9B71D4001398F7 /* SHPresentationController.m in Sources */,
 				8140DA821E9376D00025DDAE /* SHChildFourTableViewController.m in Sources */,
+				811502711EA4B608001D44B4 /* SHPicCollectionView.m in Sources */,
 				81F515141E88FC330031EF16 /* SHBaseViewController.m in Sources */,
 				81F47D2C1E98D657000A72B6 /* SHLoginRegisterView.m in Sources */,
 				81F47D281E98D53D000A72B6 /* SHTopicVoiceView.m in Sources */,
+				81041FE41E9DC82600C40BFE /* SHUserAccount.m in Sources */,
 				81FDF8EA1E9A163D00EE075B /* SHFastBtn.m in Sources */,
 				81F47D121E98D52F000A72B6 /* SHLoginRegisterViewController.m in Sources */,
+				810E93471EA46F8D00B2B032 /* NSDate+SHDate.m in Sources */,
 				81BA2EA51E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m in Sources */,
+				81AC8AB41E9C817F008658B9 /* SHPathTwoModel.m in Sources */,
 				8140DA881E9392BE0025DDAE /* SHOneChildModel.m in Sources */,
 				81F47D311E990184000A72B6 /* SHLoginField.m in Sources */,
 				81F47D341E990244000A72B6 /* UITextField+SHPlaceholder.m in Sources */,
 				81FD44CA1E8A3CBD00783B94 /* SHBaseNavViewController.m in Sources */,
+				81E3A65A1E9B60C3001398F7 /* SHTitleBtn.m in Sources */,
 				81F47D221E98D53D000A72B6 /* SHOneChildTableViewCell.m in Sources */,
 				8140DA7C1E9376B10025DDAE /* SHChildTwoTableViewController.m in Sources */,
 				81F515061E88F2940031EF16 /* AppDelegate.m in Sources */,
@@ -1067,9 +1265,11 @@
 			baseConfigurationReference = C82DCC211868858F32BB8FC7 /* Pods-SHCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = V2HDPP64PV;
 				GCC_PREFIX_HEADER = "/Users/ios/Documents/iOSTest/代码/iOSCodeTabBar/SHCode/SHCode/Other/SHCode.pch";
 				INFOPLIST_FILE = SHCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.SHCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1081,9 +1281,11 @@
 			baseConfigurationReference = 073FCB79D80ABB9A8FE56B90 /* Pods-SHCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = V2HDPP64PV;
 				GCC_PREFIX_HEADER = "/Users/ios/Documents/iOSTest/代码/iOSCodeTabBar/SHCode/SHCode/Other/SHCode.pch";
 				INFOPLIST_FILE = SHCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sh.SHCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";

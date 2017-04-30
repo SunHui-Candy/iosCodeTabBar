@@ -6,8 +6,8 @@
 //  Copyright © 2017年 ios. All rights reserved.
 //
 
-#import "SHBaseViewController.h"
+#import "SHTwoBaseTableViewController.h"
 
-@interface SHTwoViewController : SHBaseViewController
+@interface SHTwoViewController : SHTwoBaseTableViewController
 
 @end

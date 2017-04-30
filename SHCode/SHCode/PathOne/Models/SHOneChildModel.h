@@ -8,20 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, SHTopicType) {
-    /** 全部 */
-    SHTopicTypeAll = 1,
-    /** 图片 */
-    SHTopicTypePicture = 10,
-    /** 段子 */
-    SHTopicTypeWord = 29,
-    /** 声音 */
-    SHTopicTypeVoice = 31,
-    /** 视频 */
-    SHTopicTypeVideo = 41
-
-};
-
 @interface SHOneChildModel : NSObject
 
 /** 用户的名字 */

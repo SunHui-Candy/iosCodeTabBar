@@ -28,3 +28,39 @@ NSString  * const SHTabBarButtonDidRepeatClickNotification = @"SHTabBarButtonDid
 
 /** TitleButton被重复点击的通知 */
 NSString  * const SHTitleButtonDidRepeatClickNotification = @"SHTitleButtonDidRepeatClickNotification";
+
+/** get请求 */
+NSString  * const GetMethod = @"GET";
+
+/** post请求 */
+NSString  * const postMethod = @"POST";
+
+
+/** 第二部分的首页请求路径请求 */
+NSString  * const wb_pathTwoHomeData = @"https://api.weibo.com/2/statuses/home_timeline.json";
+
+NSString  * const app_key = @"3860254153";
+NSString  * const app_secret = @"7a27b92f84b480f1b1a95c44eaf8a0a3";
+NSString  * const redirect_uri = @"http://www.baidu.com";
+
+//获取微博的token的地址
+NSString  * const wb_AccessToken = @"https://api.weibo.com/oauth2/access_token";
+
+//获取微博的用户信息的地址
+NSString  * const wb_UserInfo = @"https://api.weibo.com/2/users/show.json";
+
+
+/*
+ 
+ NSString  * const app_key = @"3467343333";
+ NSString  * const app_secret = @"99cffaeff85c7e8e18a95913de1479d7";
+ NSString  * const redirect_uri = @"http://www.520it.com";
+
+
+ */
+
+
+
+
+
+

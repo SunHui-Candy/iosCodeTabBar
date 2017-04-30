@@ -12,7 +12,7 @@
 @interface SHSubOneAllTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray<SHOneChildModel *> *dataSouceArrM;
-@property (nonatomic, strong) AFHTTPSessionManager *manager;
+//@property (nonatomic, strong) AFHTTPSessionManager *manager;
 
 @property (nonatomic, strong) UIView *headerV;
 @property (nonatomic, strong) UILabel *headerL;
@@ -48,6 +48,9 @@
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(titleButtonDidRepeatClick) name:SHTitleButtonDidRepeatClickNotification object:nil];
     
+    self.tableView.estimatedRowHeight = 200;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+
 }
 
 #pragma mark - Table view data source
@@ -62,12 +65,14 @@
 {
     SHOneChildTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SHOneChildTableViewCellID forIndexPath:indexPath];
     cell.childModel = self.dataSouceArrM[indexPath.row];
+    NSLog(@"cellForRow:%ld",indexPath.row);
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SHOneChildModel *childModel = self.dataSouceArrM[indexPath.row];
+    NSLog(@"heightForRow:%ld",indexPath.row);
     return childModel.cellH;
 }
 
@@ -219,50 +224,69 @@
 
 - (void)loadNewData
 {
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
-    parameters[@"c"] = @"data";
-    parameters[@"type"] = @(self.type);
+//    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+//    parameters[@"a"] = @"list";
+//    parameters[@"c"] = @"data";
+//    parameters[@"type"] = @(self.type);
+//    
+//    [self.manager GET:SHCommonURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        
+//        
+//        self.maxtime = responseObject[@"info"][@"maxtime"];
+//        
+//        NSDictionary *dic = responseObject;
+//        NSLog(@"%@",dic);
+//        
+//        self.dataSouceArrM = [SHOneChildModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+//        [self.tableView reloadData];
+//        
+//        [self headerEndRefreshing];
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"%@",error);
+//        [self headerEndRefreshing];
+//        
+//    }];
     
-    [self.manager GET:SHCommonURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        
+    [[SHNetworkTools shareInstance] loadPathOneBaisiWithType:self.type maxtime:@"" success:^(id responseObject) {
+        NSLog(@"%@",responseObject);
         self.maxtime = responseObject[@"info"][@"maxtime"];
-        
-        NSDictionary *dic = responseObject;
-        NSLog(@"%@",dic);
-        
         self.dataSouceArrM = [SHOneChildModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         [self.tableView reloadData];
-        
         [self headerEndRefreshing];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@",error);
+
+    } failure:^(NSError *error) {
+        NSLog(@"error,%@",error);
         [self headerEndRefreshing];
-        
+
     }];
     
 }
 
 - (void)loadMoreData
 {
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
-    parameters[@"c"] = @"data";
-    parameters[@"type"] = @(self.type);
-    parameters[@"maxtime"] = self.maxtime;
+//    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+//    parameters[@"a"] = @"list";
+//    parameters[@"c"] = @"data";
+//    parameters[@"type"] = @(self.type);
+//    parameters[@"maxtime"] = self.maxtime;
+//    
+//    [self.manager GET:SHCommonURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        
+//    }];
     
-    [self.manager GET:SHCommonURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    
+    [[SHNetworkTools shareInstance] loadPathOneBaisiWithType:self.type maxtime:self.maxtime success:^(id responseObject) {
         self.maxtime = responseObject[@"info"][@"maxtime"];
         NSArray *moreTopics = [SHOneChildModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         [self.dataSouceArrM addObjectsFromArray:moreTopics];
         [self.tableView reloadData];
         [self footerEndRefreshing];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+
+    } failure:^(NSError *error) {
         [self footerEndRefreshing];
-        
     }];
     
     
@@ -306,6 +330,7 @@
     return _headerL;
 }
 
+/*
 - (AFHTTPSessionManager *)manager
 {
     if (!_manager) {
@@ -314,6 +339,9 @@
     }
     return _manager;
 }
+
+*/
+
 
 - (NSMutableArray *)dataSouceArrM
 {

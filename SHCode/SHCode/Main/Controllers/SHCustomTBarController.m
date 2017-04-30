@@ -77,8 +77,6 @@
             UIStoryboard *meStor = [UIStoryboard storyboardWithName:NSStringFromClass([SHFiveViewController class]) bundle:nil];
             
             childVC  = [meStor instantiateInitialViewController];
-            
-
 
         }else {
             
