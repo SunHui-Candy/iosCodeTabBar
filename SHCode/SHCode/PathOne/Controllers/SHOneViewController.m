@@ -14,7 +14,6 @@
 #import "SHChildFourTableViewController.h"
 #import "SHChildFiveTableViewController.h"
 
-
 @interface SHOneViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIView *topTitleView;
@@ -22,6 +21,7 @@
 
 @property (nonatomic, strong) UIButton *previousClickTitleBtn;//记录上次点击的按钮
 @property (nonatomic, strong) UIScrollView *bgScrollV;
+
 @end
 
 @implementation SHOneViewController
@@ -171,6 +171,7 @@
 
 
 }
+
 
 - (void)setupTopBtn
 {

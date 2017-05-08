@@ -8,6 +8,7 @@
 
 #import "SHTopicVoiceView.h"
 #import "SHOneChildModel.h"
+#import "SHSeeBigPicViewController.h"
 
 
 @interface SHTopicVoiceView ()
@@ -19,6 +20,22 @@
 @end
 
 @implementation SHTopicVoiceView
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.autoresizingMask = UIViewAutoresizingNone;
+    self.picImageV.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBigPicture)];
+    [self.picImageV addGestureRecognizer:tapGes];
+}
+
+- (void)seeBigPicture
+{
+    SHSeeBigPicViewController *seeBigVC = [[SHSeeBigPicViewController alloc] init];
+    seeBigVC.childModel = self.childModel;
+    [self.window.rootViewController presentViewController:seeBigVC animated:YES completion:nil];
+}
 
 - (void)setChildModel:(SHOneChildModel *)childModel
 {

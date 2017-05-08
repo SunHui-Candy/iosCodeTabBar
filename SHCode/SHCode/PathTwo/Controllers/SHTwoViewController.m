@@ -70,13 +70,6 @@
     
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{    
-//    
-//    SHPathTwoModel *viewModel = self.viewModelsArrM[indexPath.row];
-//    NSLog(@"heightforrow高度,,%lf,row:%ld",viewModel.cellHeight,indexPath.row);
-//    return viewModel.cellHeight;
-//}
 
 #pragma mark - Private&Public Methods
 - (void)setupHeaderView

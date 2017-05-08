@@ -36,6 +36,19 @@
 @end
 
 @implementation SHPathTwoCell
+- (BOOL) isBlankString:(NSString *)string {
+    NSLog(@"传入的值,,%@",string);
+    if (string == nil || string == NULL) {
+        return YES;
+    }
+    if ([string isKindOfClass:[NSNull class]]) {
+        return YES;
+    }
+    if ([[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
+        return YES;
+    }
+    return NO;
+}
 
 - (void)setViewModel:(SHPathTwoModel *)viewModel
 {
@@ -49,10 +62,10 @@
     self.screenNameL.text = viewModel.status.user.screen_name;
     self.vipView.image = viewModel.vipImage;
     self.timeL.text = viewModel.createAtText;
-   // self.contentL.attributedText = ;
     self.contentL.text = viewModel.status.text;
     NSString *sourceText = viewModel.sourceText;
-    if (![sourceText isEqualToString:@""]) {
+    NSLog(@"来说,,%@",sourceText);
+    if (![self isBlankString:sourceText]) {
         self.sourceL.text = kFormat(@"来自%@", sourceText);
     }else {
         self.sourceL.text = @"";
@@ -64,7 +77,6 @@
     CGSize picViewSize = [self calculatePicViewSizecalculatePicViewSize:viewModel.picURLs.count];
     self.picViewWCons.constant = picViewSize.width;
     self.picViewHCons.constant = picViewSize.height;
-    NSLog(@"公司,,%@",viewModel.picURLs);
     
     self.picView.picUrls = viewModel.picURLs;
 
@@ -87,18 +99,6 @@
         
     }
     
-    
-//
-//     
-//    if (viewModel.cellHeight == 0) {
-//        
-//        [self layoutIfNeeded];
-//        viewModel.cellHeight = CGRectGetMaxY(self.bottomToolView.frame);
-//        
-//        NSLog(@"高粗值,%f",viewModel.cellHeight);
-//    }
-    
-    
 }
 
 - (CGSize)calculatePicViewSizecalculatePicViewSize:(NSInteger)count
@@ -117,6 +117,7 @@
         layout.itemSize = CGSizeMake(image.size.width * 2, image.size.height * 2);
         return CGSizeMake(image.size.width * 2, image.size.height * 2);
     }
+    
     
     CGFloat imageWH = (kScreenW - 2 * edgeMargin - 2 * itemMargin )/3;
     

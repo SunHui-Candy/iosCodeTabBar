@@ -19,6 +19,7 @@
 #import "SHCustomControlTool.h"
 #import "SHNetworkTools.h"
 #import "NSDate+SHDate.h"
+#import "NSString+SHEmptyStr.h"
 
 #import <AFNetworking.h>
 #import <SVProgressHUD.h>

@@ -14,6 +14,8 @@
 		81041FF01E9DFE5800C40BFE /* SHWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81041FEE1E9DFE5800C40BFE /* SHWelcomeViewController.xib */; };
 		81041FF31E9E15B300C40BFE /* SHPathStatsTwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81041FF21E9E15B300C40BFE /* SHPathStatsTwoModel.m */; };
 		81041FF61E9E15CD00C40BFE /* SHPathTwoUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81041FF51E9E15CD00C40BFE /* SHPathTwoUserModel.m */; };
+		81046B851EBAD02000BA95F7 /* SHSeeBigPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81046B831EBAD02000BA95F7 /* SHSeeBigPicViewController.m */; };
+		81046B861EBAD02000BA95F7 /* SHSeeBigPicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81046B841EBAD02000BA95F7 /* SHSeeBigPicViewController.xib */; };
 		810E93471EA46F8D00B2B032 /* NSDate+SHDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E93461EA46F8D00B2B032 /* NSDate+SHDate.m */; };
 		810E934A1EA46FB900B2B032 /* SHFindEmoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E93491EA46FB900B2B032 /* SHFindEmoticon.m */; };
 		811502711EA4B608001D44B4 /* SHPicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 811502701EA4B608001D44B4 /* SHPicCollectionView.m */; };
@@ -33,6 +35,7 @@
 		81460F2B1E8BBF3C00897B16 /* UIImage+SHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F241E8BBF3C00897B16 /* UIImage+SHImage.m */; };
 		81460F2C1E8BBF3C00897B16 /* UIImageView+SHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */; };
 		81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */; };
+		81471A931EB9B61300E0BA5B /* NSString+SHEmptyStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 81471A921EB9B61300E0BA5B /* NSString+SHEmptyStr.m */; };
 		816690801E9CBF4B000F700B /* SHOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8166907E1E9CBF4B000F700B /* SHOAuthViewController.m */; };
 		816690811E9CBF4B000F700B /* SHOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8166907F1E9CBF4B000F700B /* SHOAuthViewController.xib */; };
 		8197E75E1E9CCAA0002D7013 /* SHTwoBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8197E75D1E9CCAA0002D7013 /* SHTwoBaseTableViewController.m */; };
@@ -121,6 +124,9 @@
 		81041FF21E9E15B300C40BFE /* SHPathStatsTwoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPathStatsTwoModel.m; sourceTree = "<group>"; };
 		81041FF41E9E15CD00C40BFE /* SHPathTwoUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPathTwoUserModel.h; sourceTree = "<group>"; };
 		81041FF51E9E15CD00C40BFE /* SHPathTwoUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPathTwoUserModel.m; sourceTree = "<group>"; };
+		81046B821EBAD02000BA95F7 /* SHSeeBigPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSeeBigPicViewController.h; sourceTree = "<group>"; };
+		81046B831EBAD02000BA95F7 /* SHSeeBigPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSeeBigPicViewController.m; sourceTree = "<group>"; };
+		81046B841EBAD02000BA95F7 /* SHSeeBigPicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHSeeBigPicViewController.xib; sourceTree = "<group>"; };
 		810E93451EA46F8D00B2B032 /* NSDate+SHDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SHDate.h"; sourceTree = "<group>"; };
 		810E93461EA46F8D00B2B032 /* NSDate+SHDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SHDate.m"; sourceTree = "<group>"; };
 		810E93481EA46FB900B2B032 /* SHFindEmoticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFindEmoticon.h; sourceTree = "<group>"; };
@@ -158,6 +164,8 @@
 		81460F261E8BBF3C00897B16 /* UIImageView+SHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SHImageView.m"; sourceTree = "<group>"; };
 		81460F271E8BBF3C00897B16 /* UIView+SHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHFrame.h"; sourceTree = "<group>"; };
 		81460F281E8BBF3C00897B16 /* UIView+SHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHFrame.m"; sourceTree = "<group>"; };
+		81471A911EB9B61300E0BA5B /* NSString+SHEmptyStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHEmptyStr.h"; sourceTree = "<group>"; };
+		81471A921EB9B61300E0BA5B /* NSString+SHEmptyStr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHEmptyStr.m"; sourceTree = "<group>"; };
 		8166907D1E9CBF4B000F700B /* SHOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOAuthViewController.h; sourceTree = "<group>"; };
 		8166907E1E9CBF4B000F700B /* SHOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOAuthViewController.m; sourceTree = "<group>"; };
 		8166907F1E9CBF4B000F700B /* SHOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHOAuthViewController.xib; sourceTree = "<group>"; };
@@ -353,6 +361,8 @@
 				81F47D331E990244000A72B6 /* UITextField+SHPlaceholder.m */,
 				810E93451EA46F8D00B2B032 /* NSDate+SHDate.h */,
 				810E93461EA46F8D00B2B032 /* NSDate+SHDate.m */,
+				81471A911EB9B61300E0BA5B /* NSString+SHEmptyStr.h */,
+				81471A921EB9B61300E0BA5B /* NSString+SHEmptyStr.m */,
 			);
 			path = Catgray;
 			sourceTree = "<group>";
@@ -634,6 +644,9 @@
 			children = (
 				81F515211E88FC8D0031EF16 /* SHOneViewController.h */,
 				81F515221E88FC8D0031EF16 /* SHOneViewController.m */,
+				81046B821EBAD02000BA95F7 /* SHSeeBigPicViewController.h */,
+				81046B831EBAD02000BA95F7 /* SHSeeBigPicViewController.m */,
+				81046B841EBAD02000BA95F7 /* SHSeeBigPicViewController.xib */,
 				8140DA761E93765D0025DDAE /* SubControllers */,
 				81460F1D1E8BB81900897B16 /* SHOneRightItemViewController.h */,
 				81460F1E1E8BB81900897B16 /* SHOneRightItemViewController.m */,
@@ -981,6 +994,7 @@
 				812B49771EA5C15B00D44C2B /* SHPicCollectionViewCell.xib in Resources */,
 				81FF0DF91E8CB8EE0014DA88 /* SHFiveViewController.storyboard in Resources */,
 				81F47D391E991316000A72B6 /* SHFastLoginView.xib in Resources */,
+				81046B861EBAD02000BA95F7 /* SHSeeBigPicViewController.xib in Resources */,
 				81F47D131E98D52F000A72B6 /* SHLoginRegisterViewController.xib in Resources */,
 				81F514C71E88F1C20031EF16 /* Main.storyboard in Resources */,
 				81FDF8F01E9A2DB000EE075B /* SHWebViewController.xib in Resources */,
@@ -1097,6 +1111,7 @@
 				81FF2D111E9B245900DE34AE /* SHFileTool.m in Sources */,
 				813FBD361E97776200D93F3F /* SHSubOneAllTableViewController.m in Sources */,
 				81E3A6631E9B71D4001398F7 /* SHPresentationController.m in Sources */,
+				81046B851EBAD02000BA95F7 /* SHSeeBigPicViewController.m in Sources */,
 				8140DA821E9376D00025DDAE /* SHChildFourTableViewController.m in Sources */,
 				811502711EA4B608001D44B4 /* SHPicCollectionView.m in Sources */,
 				81F515141E88FC330031EF16 /* SHBaseViewController.m in Sources */,
@@ -1107,6 +1122,7 @@
 				81F47D121E98D52F000A72B6 /* SHLoginRegisterViewController.m in Sources */,
 				810E93471EA46F8D00B2B032 /* NSDate+SHDate.m in Sources */,
 				81BA2EA51E8E0AC5006ABCEF /* SHFiveCollectionViewCell.m in Sources */,
+				81471A931EB9B61300E0BA5B /* NSString+SHEmptyStr.m in Sources */,
 				81AC8AB41E9C817F008658B9 /* SHPathTwoModel.m in Sources */,
 				8140DA881E9392BE0025DDAE /* SHOneChildModel.m in Sources */,
 				81F47D311E990184000A72B6 /* SHLoginField.m in Sources */,

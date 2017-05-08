@@ -8,6 +8,7 @@
 
 #import "SHTopicVideoView.h"
 #import "SHOneChildModel.h"
+#import "SHSeeBigPicViewController.h"
 
 @interface SHTopicVideoView ()
 
@@ -19,6 +20,22 @@
 
 @implementation SHTopicVideoView
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.autoresizingMask = UIViewAutoresizingNone;
+    self.picImageV.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBigPicture)];
+    [self.picImageV addGestureRecognizer:tapGes];
+}
+
+- (void)seeBigPicture
+{
+    SHSeeBigPicViewController *seeBigVC = [[SHSeeBigPicViewController alloc] init];
+    seeBigVC.childModel = self.childModel;
+    [self.window.rootViewController presentViewController:seeBigVC animated:YES completion:nil];
+}
+
 - (void)setChildModel:(SHOneChildModel *)childModel
 {
     _childModel = childModel;
@@ -27,6 +44,8 @@
             return;
         }
     }];
+    
+    
     
     if (childModel.playcount >= 10000) {
         self.playcountL.text = kFormat(@"%.1f万播放", childModel.playcount / 10000.0);
