@@ -87,6 +87,8 @@
         [SVProgressHUD showErrorWithStatus:@"保存图片失败"];
         return;
     }
+    
+    // 获得相册
     PHAssetCollection *createdCollection = self.createdCollection;
     if (createdCollection == nil) {
         [SVProgressHUD showErrorWithStatus:@"创建或者获取相册失败"];
@@ -118,6 +120,7 @@
                 //用户之前有操作过
                 NSLog(@"提醒用户打开开关");
             }
+            
         }else if (status == PHAuthorizationStatusAuthorized) {
             //用户允许当前app访问相册
             [self saveImageIntoAlbum];

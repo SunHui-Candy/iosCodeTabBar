@@ -20,6 +20,9 @@
 		810E934A1EA46FB900B2B032 /* SHFindEmoticon.m in Sources */ = {isa = PBXBuildFile; fileRef = 810E93491EA46FB900B2B032 /* SHFindEmoticon.m */; };
 		811502711EA4B608001D44B4 /* SHPicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 811502701EA4B608001D44B4 /* SHPicCollectionView.m */; };
 		811502741EA4B873001D44B4 /* SHPicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 811502731EA4B873001D44B4 /* SHPicCollectionViewCell.m */; };
+		811783411F03884F00EECC1F /* SHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 811783401F03884F00EECC1F /* SHCollectionViewCell.m */; };
+		811783441F03886E00EECC1F /* SHFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 811783431F03886E00EECC1F /* SHFlowLayout.m */; };
+		811783471F038A7600EECC1F /* SHCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 811783461F038A7600EECC1F /* SHCollectionModel.m */; };
 		812B49771EA5C15B00D44C2B /* SHPicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812B49761EA5C15B00D44C2B /* SHPicCollectionViewCell.xib */; };
 		813FBD361E97776200D93F3F /* SHSubOneAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813FBD351E97776200D93F3F /* SHSubOneAllTableViewController.m */; };
 		813FBD381E9795DE00D93F3F /* SHOneRightItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813FBD371E9795DE00D93F3F /* SHOneRightItemViewController.xib */; };
@@ -135,6 +138,12 @@
 		811502701EA4B608001D44B4 /* SHPicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPicCollectionView.m; sourceTree = "<group>"; };
 		811502721EA4B873001D44B4 /* SHPicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPicCollectionViewCell.h; sourceTree = "<group>"; };
 		811502731EA4B873001D44B4 /* SHPicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPicCollectionViewCell.m; sourceTree = "<group>"; };
+		8117833F1F03884F00EECC1F /* SHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCollectionViewCell.h; sourceTree = "<group>"; };
+		811783401F03884F00EECC1F /* SHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCollectionViewCell.m; sourceTree = "<group>"; };
+		811783421F03886E00EECC1F /* SHFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFlowLayout.h; sourceTree = "<group>"; };
+		811783431F03886E00EECC1F /* SHFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFlowLayout.m; sourceTree = "<group>"; };
+		811783451F038A7600EECC1F /* SHCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCollectionModel.h; sourceTree = "<group>"; };
+		811783461F038A7600EECC1F /* SHCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCollectionModel.m; sourceTree = "<group>"; };
 		812B49761EA5C15B00D44C2B /* SHPicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHPicCollectionViewCell.xib; sourceTree = "<group>"; };
 		813FBD341E97776200D93F3F /* SHSubOneAllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSubOneAllTableViewController.h; sourceTree = "<group>"; };
 		813FBD351E97776200D93F3F /* SHSubOneAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSubOneAllTableViewController.m; sourceTree = "<group>"; };
@@ -618,6 +627,8 @@
 		81F514F81E88F2940031EF16 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				811783451F038A7600EECC1F /* SHCollectionModel.h */,
+				811783461F038A7600EECC1F /* SHCollectionModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -625,6 +636,10 @@
 		81F514F91E88F2940031EF16 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8117833F1F03884F00EECC1F /* SHCollectionViewCell.h */,
+				811783401F03884F00EECC1F /* SHCollectionViewCell.m */,
+				811783421F03886E00EECC1F /* SHFlowLayout.h */,
+				811783431F03886E00EECC1F /* SHFlowLayout.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1077,6 +1092,7 @@
 				8197E7611E9CCB28002D7013 /* SHVisitorView.m in Sources */,
 				81F5151D1E88FC6D0031EF16 /* SHThreeViewController.m in Sources */,
 				81460F1F1E8BB81900897B16 /* SHOneRightItemViewController.m in Sources */,
+				811783471F038A7600EECC1F /* SHCollectionModel.m in Sources */,
 				81460F2A1E8BBF3C00897B16 /* UIBarButtonItem+SHBarItem.m in Sources */,
 				81041FE71E9DD78000C40BFE /* SHUserAccountViewModel.m in Sources */,
 				810E934A1EA46FB900B2B032 /* SHFindEmoticon.m in Sources */,
@@ -1086,6 +1102,7 @@
 				81F515171E88FC4D0031EF16 /* SHFiveViewController.m in Sources */,
 				81BA2EA91E8E3C82006ABCEF /* SHFiveModel.m in Sources */,
 				81460F2D1E8BBF3C00897B16 /* UIView+SHFrame.m in Sources */,
+				811783411F03884F00EECC1F /* SHCollectionViewCell.m in Sources */,
 				81E3A6601E9B6C28001398F7 /* SHPopAnimator.m in Sources */,
 				81F5151A1E88FC5F0031EF16 /* SHFourViewController.m in Sources */,
 				81FDF8F41E9A45F000EE075B /* SHSettingTableViewController.m in Sources */,
@@ -1100,6 +1117,7 @@
 				8140DA791E9376A00025DDAE /* SHChildOneTableViewController.m in Sources */,
 				81F47D241E98D53D000A72B6 /* SHTopicPictureView.m in Sources */,
 				81FF0DFC1E8CD9270014DA88 /* SHConstStr.m in Sources */,
+				811783441F03886E00EECC1F /* SHFlowLayout.m in Sources */,
 				816690801E9CBF4B000F700B /* SHOAuthViewController.m in Sources */,
 				811502741EA4B873001D44B4 /* SHPicCollectionViewCell.m in Sources */,
 				81460F2C1E8BBF3C00897B16 /* UIImageView+SHImageView.m in Sources */,

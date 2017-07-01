@@ -21,6 +21,7 @@
 #define kClearColor [UIColor clearColor]
 #define kBlueColor [UIColor blueColor]
 #define kYellowColor [UIColor yellowColor]
+#define kOrangeColor [UIColor orangeColor]
 
 //图片
 #define kImageName(imageName) [UIImage imageNamed:imageName]
